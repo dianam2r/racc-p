@@ -1,0 +1,12 @@
+name: Lorem ipsum
+type: module
+description: 'Lorem ipsum generator for Drupal'
+package: Development
+# core: 8.x
+configure: loremipsum.form
+
+# Information added by Drupal.org packaging script on 2015-05-20
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'loremipsum'
+datestamp: 1432084682
