@@ -1,0 +1,37 @@
+uuid: faaedaab-7ffc-4f7e-8390-b8d74f6616cc
+langcode: en
+status: true
+dependencies: {  }
+id: staff
+label: Staff
+weight: 3
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access in-place editing'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'create about_us content'
+  - 'create career_opportunities content'
+  - 'create current_posting_item content'
+  - 'create current_postings content'
+  - 'create document content'
+  - 'create job_description content'
+  - 'create slider content'
+  - 'create work_study_items content'
+  - 'create work_study_job_opportunities content'
+  - 'edit any article content'
+  - 'edit any career_opportunities content'
+  - 'edit any current_posting_item content'
+  - 'edit any current_postings content'
+  - 'edit any document content'
+  - 'edit any job_description content'
+  - 'edit any page content'
+  - 'edit any slider content'
+  - 'edit any work_study_items content'
+  - 'edit any work_study_job_opportunities content'
+  - 'edit own about_us content'
+  - 'edit terms in departments'
+  - 'edit terms in document'
+  - 'edit terms in job_type'
+  - 'edit terms in tags'

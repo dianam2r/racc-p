@@ -1,0 +1,19 @@
+uuid: 46c281a4-cf57-4bab-b519-9fdfff9ec31a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - account
+    parent: 'main:'
+name: 'Work-Study Items'
+type: work_study_items
+description: 'Individual job opportunities are presented here'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

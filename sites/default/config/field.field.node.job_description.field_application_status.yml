@@ -1,0 +1,21 @@
+uuid: b8bdf18d-6799-47a6-b8b7-df76e93973c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_application_status
+    - node.type.job_description
+  module:
+    - options
+id: node.job_description.field_application_status
+field_name: field_application_status
+entity_type: node
+bundle: job_description
+label: 'Application Status'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

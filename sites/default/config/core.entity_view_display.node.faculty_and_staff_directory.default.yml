@@ -1,0 +1,37 @@
+uuid: 5ce5c70e-57e1-4bc4-af0c-0815622e18ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faculty_and_staff_directory.body
+    - field.field.node.faculty_and_staff_directory.field_user_profile
+    - node.type.faculty_and_staff_directory
+  module:
+    - text
+    - user
+id: node.faculty_and_staff_directory.default
+targetEntityType: node
+bundle: faculty_and_staff_directory
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_user_profile:
+    weight: 102
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

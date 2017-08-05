@@ -1,0 +1,33 @@
+uuid: 2f490b0b-b483-42d7-8806-d60076ed683f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_application_status
+field_name: field_application_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: accepting_applications
+      label: 'Accepting Applications'
+    -
+      value: reviewing_applications
+      label: 'Reviewing Applications'
+    -
+      value: currently_interviewing
+      label: 'Currently Interviewing'
+    -
+      value: position_filled
+      label: 'Position Filled'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

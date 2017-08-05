@@ -1,0 +1,31 @@
+uuid: ca42efc3-5666-43ed-8614-69203668f47c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact
+    - node.type.work_study_items
+id: node.work_study_items.field_contact
+field_name: field_contact
+entity_type: node
+bundle: work_study_items
+label: Contact
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        staff: staff
+        administrator: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

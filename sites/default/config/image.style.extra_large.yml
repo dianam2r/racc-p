@@ -1,0 +1,14 @@
+uuid: 375acce9-d2d9-4e85-a822-535745af2e0f
+langcode: en
+status: true
+dependencies: {  }
+name: extra_large
+label: 'Fixed Size (530 x 530)'
+effects:
+  9c58c1b6-b3d0-45cc-8190-f060102a4795:
+    uuid: 9c58c1b6-b3d0-45cc-8190-f060102a4795
+    id: image_resize
+    weight: 1
+    data:
+      width: 530
+      height: 530

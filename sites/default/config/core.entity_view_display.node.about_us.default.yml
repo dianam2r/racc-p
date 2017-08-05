@@ -1,0 +1,36 @@
+uuid: 2ac6e407-44ce-4b9f-931b-707d6a72fbc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_us.body
+    - field.field.node.about_us.field_subcontent
+    - node.type.about_us
+  module:
+    - text
+    - user
+id: node.about_us.default
+targetEntityType: node
+bundle: about_us
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_subcontent:
+    weight: 3
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

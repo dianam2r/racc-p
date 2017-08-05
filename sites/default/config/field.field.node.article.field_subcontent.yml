@@ -1,0 +1,21 @@
+uuid: dbb77969-0d83-4961-a4ab-344d34c13e98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subcontent
+    - node.type.article
+  module:
+    - text
+id: node.article.field_subcontent
+field_name: field_subcontent
+entity_type: node
+bundle: article
+label: Subcontent
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

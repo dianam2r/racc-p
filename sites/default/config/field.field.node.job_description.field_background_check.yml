@@ -1,0 +1,23 @@
+uuid: b4ed0af5-2ed1-404e-847a-724d13ebc11c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background_check
+    - node.type.job_description
+id: node.job_description.field_background_check
+field_name: field_background_check
+entity_type: node
+bundle: job_description
+label: 'Background Check'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'If you are chosen for this position, a background check will be required.'
+  off_label: 'A background check is not required for this position.'
+field_type: boolean

@@ -1,0 +1,19 @@
+uuid: 90e241cf-eb16-4a0f-ac01-895c088c4741
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - account
+    parent: 'main:'
+name: 'Current Posting Item'
+type: current_posting_item
+description: 'This are some business opportunities related to services that are required at some point.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

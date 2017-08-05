@@ -1,0 +1,21 @@
+uuid: 72be72b8-9d8e-4220-91b0-9e3d22d77242
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subcontent
+    - node.type.job_description
+  module:
+    - text
+id: node.job_description.field_subcontent
+field_name: field_subcontent
+entity_type: node
+bundle: job_description
+label: Subcontent
+description: 'Add some other requirements as needed'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

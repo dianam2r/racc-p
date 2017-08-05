@@ -1,0 +1,19 @@
+uuid: 669085ec-540c-4339-8066-ec544d1734b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_place_event
+    - node.type.event_item
+id: node.event_item.field_place_event
+field_name: field_place_event
+entity_type: node
+bundle: event_item
+label: 'Place Event'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

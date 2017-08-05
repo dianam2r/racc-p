@@ -1,0 +1,19 @@
+uuid: 74356348-0036-4e61-8fc3-f210745f1edf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - account
+    parent: 'main:menu_link_content:53c330c0-7209-4e40-8cbd-ad944809b477'
+name: 'Work-Study Job Opportunities'
+type: work_study_job_opportunities
+description: 'Job opportunities for those who also learn at RACC'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

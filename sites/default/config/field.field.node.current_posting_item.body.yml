@@ -1,0 +1,22 @@
+uuid: b97933e9-9c14-4912-984d-dfa10b1d0b59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.current_posting_item
+  module:
+    - text
+id: node.current_posting_item.body
+field_name: body
+entity_type: node
+bundle: current_posting_item
+label: 'Additional Info'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

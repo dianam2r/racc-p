@@ -1,0 +1,21 @@
+uuid: 75c9d40a-3738-4fa4-89fb-28e78a4e0e23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_posted_date
+    - node.type.work_study_items
+  module:
+    - datetime
+id: node.work_study_items.field_posted_date
+field_name: field_posted_date
+entity_type: node
+bundle: work_study_items
+label: 'Posted Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

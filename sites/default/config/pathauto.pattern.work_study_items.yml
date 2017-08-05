@@ -1,0 +1,22 @@
+uuid: b40714cb-8265-47ba-9cde-c16f37cd3a6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: work_study_items
+label: 'Work Study Items'
+type: 'canonical_entities:node'
+pattern: '/admissions/work-study-opportunities/id-[node:nid]'
+selection_criteria:
+  5e0f961e-88c9-4cdc-afec-315c2219c416:
+    id: node_type
+    bundles:
+      work_study_items: work_study_items
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5e0f961e-88c9-4cdc-afec-315c2219c416
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,19 @@
+uuid: 767ba5c9-9b1b-47d2-a8f3-93f1af375e84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_apply_by_date
+    - node.type.job_description
+id: node.job_description.field_apply_by_date
+field_name: field_apply_by_date
+entity_type: node
+bundle: job_description
+label: 'Apply by Date'
+description: 'Date format is mm/dd/yyyy or any other text is fine'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

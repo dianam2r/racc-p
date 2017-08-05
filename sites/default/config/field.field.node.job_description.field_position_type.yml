@@ -1,0 +1,28 @@
+uuid: 3afa5ac2-7aa3-4c9f-bdf8-db086cdb4e20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_type
+    - node.type.job_description
+    - taxonomy.vocabulary.job_type
+id: node.job_description.field_position_type
+field_name: field_position_type
+entity_type: node
+bundle: job_description
+label: 'Position Type'
+description: 'Type of job according to profile'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      job_type: job_type
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

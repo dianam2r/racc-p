@@ -1,0 +1,29 @@
+uuid: 132c896b-7a3e-4a07-a142-b2a019da645a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.events
+  module:
+    - system
+  theme:
+    - bartik
+id: events
+theme: bartik
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'system_menu_block:events'
+settings:
+  id: 'system_menu_block:events'
+  label: Events
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/events"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,21 @@
+uuid: f45071d4-efc5-49de-8747-25e2ba0c7e57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_due_date
+    - node.type.current_posting_item
+  module:
+    - datetime
+id: node.current_posting_item.field_due_date
+field_name: field_due_date
+entity_type: node
+bundle: current_posting_item
+label: 'Due Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

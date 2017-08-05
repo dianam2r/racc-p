@@ -1,0 +1,19 @@
+uuid: 6250f87a-c794-49f7-8731-e9952ba16737
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_slider_message
+field_name: field_slider_message
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

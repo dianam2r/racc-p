@@ -1,0 +1,22 @@
+uuid: dc686589-4c66-4cdc-95a4-60692ea5f13b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: faculty_and_staff
+label: 'Faculty and Staff'
+type: 'canonical_entities:node'
+pattern: '/contacts/[node:title]'
+selection_criteria:
+  82bf91c7-f501-4b16-af6e-76101562abe6:
+    id: node_type
+    bundles:
+      faculty_and_staff_directory: faculty_and_staff_directory
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 82bf91c7-f501-4b16-af6e-76101562abe6
+selection_logic: and
+weight: -5
+relationships: {  }

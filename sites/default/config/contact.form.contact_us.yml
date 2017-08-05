@@ -1,0 +1,12 @@
+uuid: 177d80ee-dcfb-4580-9eb2-a458c188abfe
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact Us'
+recipients:
+  - no-reply@test-recc.edu
+reply: ''
+weight: 0
+message: 'Thanks for your interest ! We''ll reply as soon as possible.'
+redirect: /

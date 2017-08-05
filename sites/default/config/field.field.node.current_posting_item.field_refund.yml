@@ -1,0 +1,21 @@
+uuid: 0e0c82e2-0d79-4b5d-857c-97971ae914b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_refund
+    - node.type.current_posting_item
+id: node.current_posting_item.field_refund
+field_name: field_refund
+entity_type: node
+bundle: current_posting_item
+label: Refund
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: N/A
+default_value_callback: ''
+settings: {  }
+field_type: string

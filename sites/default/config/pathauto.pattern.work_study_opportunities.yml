@@ -1,0 +1,22 @@
+uuid: ff7c59d8-9074-42a3-b1fe-53636321fbce
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: work_study_opportunities
+label: 'Work-Study Opportunities'
+type: 'canonical_entities:node'
+pattern: '/admissions/[node:title]'
+selection_criteria:
+  be0f23d7-5352-40c4-822b-dcd2039fd1c9:
+    id: node_type
+    bundles:
+      work_study_job_opportunities: work_study_job_opportunities
+    negate: false
+    context_mapping:
+      node: node
+    uuid: be0f23d7-5352-40c4-822b-dcd2039fd1c9
+selection_logic: and
+weight: -5
+relationships: {  }

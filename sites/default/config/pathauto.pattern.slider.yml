@@ -1,0 +1,22 @@
+uuid: 037be96c-1e3d-4b78-9c36-d81a9339a7dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: slider
+label: Slider
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  ac619bc7-ccde-4ba4-9335-ba955f3352c2:
+    id: node_type
+    bundles:
+      slider: slider
+    negate: false
+    context_mapping:
+      node: node
+    uuid: ac619bc7-ccde-4ba4-9335-ba955f3352c2
+selection_logic: and
+weight: -5
+relationships: {  }

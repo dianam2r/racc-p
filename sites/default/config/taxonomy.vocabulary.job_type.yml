@@ -1,0 +1,9 @@
+uuid: 0d7b1ec2-bfd9-437e-a555-956506923ebb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Job Type'
+vid: job_type
+description: 'Different type of positions'
+hierarchy: 0
+weight: 0

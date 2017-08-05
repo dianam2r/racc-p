@@ -1,0 +1,28 @@
+uuid: 6d6ee72d-ed40-414f-9796-57fc0c97de71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_profile
+    - node.type.faculty_and_staff_directory
+id: node.faculty_and_staff_directory.field_user_profile
+field_name: field_user_profile
+entity_type: node
+bundle: faculty_and_staff_directory
+label: 'User Profile'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 5f739c16-b3dd-40db-9026-d0b184628bd9
+langcode: en
+status: true
+dependencies: {  }
+id: events
+label: Events
+description: 'Events in RACC'
+locked: false

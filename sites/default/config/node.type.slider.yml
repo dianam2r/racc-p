@@ -1,0 +1,19 @@
+uuid: 3db3557e-0f74-4c8a-9337-74ac2c2da0e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - account
+    parent: 'main:'
+name: Slider
+type: slider
+description: "Use slider to set images in order to make transitions (?)\r\n"
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

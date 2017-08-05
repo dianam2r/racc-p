@@ -1,0 +1,9 @@
+uuid: a91b452b-c1ea-4436-925d-40f6ff843b86
+langcode: en
+status: true
+dependencies: {  }
+name: Departments
+vid: departments
+description: 'Different departments or faculties'
+hierarchy: 0
+weight: 0

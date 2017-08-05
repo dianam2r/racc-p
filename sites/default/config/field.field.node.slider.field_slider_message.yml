@@ -1,0 +1,21 @@
+uuid: 60be8e20-7f9f-4bb5-885e-7768f9dba2bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slider_message
+    - node.type.slider
+  module:
+    - text
+id: node.slider.field_slider_message
+field_name: field_slider_message
+entity_type: node
+bundle: slider
+label: 'Slider Message'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

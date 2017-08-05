@@ -1,0 +1,9 @@
+uuid: ffb70f2b-3e63-40e0-ad8f-e391ea495bb6
+langcode: en
+status: true
+dependencies: {  }
+name: Document
+vid: document
+description: 'terms for documents'
+hierarchy: 0
+weight: 0

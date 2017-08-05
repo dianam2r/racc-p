@@ -1,0 +1,22 @@
+uuid: b7a12cbc-c28a-4f68-a58f-eb4e090f1daa
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: about_racc
+label: 'About RACC'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  1602d9ce-a952-4c8b-a628-e528cd34cab9:
+    id: node_type
+    bundles:
+      about_us: about_us
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1602d9ce-a952-4c8b-a628-e528cd34cab9
+selection_logic: and
+weight: -5
+relationships: {  }

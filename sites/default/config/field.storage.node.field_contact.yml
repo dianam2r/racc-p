@@ -1,0 +1,20 @@
+uuid: 1ec0de97-5623-412f-b2f1-97f9b9ec5bf8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_contact
+field_name: field_contact
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

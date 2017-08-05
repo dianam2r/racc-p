@@ -1,0 +1,20 @@
+uuid: 60a8bf33-d206-47f1-ad70-3a97b473d91e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_pay_rate
+field_name: field_pay_rate
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

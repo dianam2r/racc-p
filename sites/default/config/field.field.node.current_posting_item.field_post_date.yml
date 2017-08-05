@@ -1,0 +1,21 @@
+uuid: 40230b5b-ec36-41d4-9b2e-2c9cb22f481b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_post_date
+    - node.type.current_posting_item
+  module:
+    - datetime
+id: node.current_posting_item.field_post_date
+field_name: field_post_date
+entity_type: node
+bundle: current_posting_item
+label: 'Post Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

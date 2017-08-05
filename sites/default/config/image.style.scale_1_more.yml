@@ -1,0 +1,15 @@
+uuid: e5729918-3150-43ca-b807-e9acba4e2daf
+langcode: en
+status: true
+dependencies: {  }
+name: scale_1_more
+label: 'Scale 1% more'
+effects:
+  c23bd2f9-a352-43c9-bf81-33df4f1b6d5e:
+    uuid: c23bd2f9-a352-43c9-bf81-33df4f1b6d5e
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 606
+      upscale: true

@@ -1,0 +1,19 @@
+uuid: 3763bcc0-762e-4206-9e26-9d7f36d8fb9b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - account
+    parent: 'main:'
+name: 'Event Item'
+type: event_item
+description: 'Description of events'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

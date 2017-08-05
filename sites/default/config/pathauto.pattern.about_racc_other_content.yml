@@ -1,0 +1,24 @@
+uuid: 2e3d0c0e-ac9f-44e1-a229-4cb877846d20
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: about_racc_other_content
+label: 'About RACC - Other Content'
+type: 'canonical_entities:node'
+pattern: '/about-racc/[node:title]'
+selection_criteria:
+  caf58d86-d081-4f1d-8260-bee1b73392b6:
+    id: node_type
+    bundles:
+      career_opportunities: career_opportunities
+      current_postings: current_postings
+      document: document
+    negate: false
+    context_mapping:
+      node: node
+    uuid: caf58d86-d081-4f1d-8260-bee1b73392b6
+selection_logic: and
+weight: -5
+relationships: {  }

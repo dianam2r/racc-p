@@ -1,0 +1,22 @@
+uuid: d88d43a9-d835-4d25-b706-74caec8d929e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.work_study_job_opportunities
+id: node.work_study_job_opportunities.promote
+field_name: promote
+entity_type: node
+bundle: work_study_job_opportunities
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

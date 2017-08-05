@@ -1,0 +1,15 @@
+uuid: 49b68a04-e166-400c-8b52-f809cd92fb54
+langcode: en
+status: true
+dependencies: {  }
+name: news
+label: 'Scale 1% less'
+effects:
+  c1d96e24-c614-4833-86b1-cd8642fffe38:
+    uuid: c1d96e24-c614-4833-86b1-cd8642fffe38
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 554
+      upscale: true

@@ -1,0 +1,67 @@
+uuid: 28cbb3ff-d367-4073-b011-0b20c8267a67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event_item.body
+    - field.field.node.event_item.field_image
+    - field.field.node.event_item.field_place_event
+    - field.field.node.event_item.field_tag_event
+    - field.field.node.event_item.field_time_event
+    - image.style.large
+    - node.type.event_item
+  module:
+    - image
+    - text
+    - user
+id: node.event_item.default
+targetEntityType: node
+bundle: event_item
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_place_event:
+    weight: 3
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tag_event:
+    weight: 6
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_time_event:
+    weight: 2
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

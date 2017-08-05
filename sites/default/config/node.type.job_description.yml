@@ -1,0 +1,19 @@
+uuid: b56d964a-33dd-4f7f-b7be-d8f269294d5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - account
+    parent: 'main:'
+name: 'Job Description'
+type: job_description
+description: 'Requirements for job applicants.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

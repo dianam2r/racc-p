@@ -1,0 +1,19 @@
+uuid: 000f03e7-0385-4dc7-bcaf-60328f1d10e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bid_fee
+    - node.type.current_posting_item
+id: node.current_posting_item.field_bid_fee
+field_name: field_bid_fee
+entity_type: node
+bundle: current_posting_item
+label: 'Bid Fee'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 2c168ac7-45af-4a5e-8b2b-572a364ccdb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email
+    - node.type.work_study_items
+id: node.work_study_items.field_email
+field_name: field_email
+entity_type: node
+bundle: work_study_items
+label: Email
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

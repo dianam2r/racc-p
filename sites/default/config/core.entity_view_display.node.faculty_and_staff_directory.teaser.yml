@@ -1,0 +1,28 @@
+uuid: 13c6e757-1460-484d-8a77-28901d2c07d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.faculty_and_staff_directory.body
+    - node.type.faculty_and_staff_directory
+  module:
+    - text
+    - user
+id: node.faculty_and_staff_directory.teaser
+targetEntityType: node
+bundle: faculty_and_staff_directory
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

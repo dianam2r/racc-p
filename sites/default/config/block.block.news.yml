@@ -1,0 +1,29 @@
+uuid: 2902da7a-8688-4a4f-a59d-822ae1f53baf
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.news
+  module:
+    - system
+  theme:
+    - bartik
+id: news
+theme: bartik
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'system_menu_block:news'
+settings:
+  id: 'system_menu_block:news'
+  label: News
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/news"
+    negate: false
+    context_mapping: {  }
