@@ -4,7 +4,7 @@ features:
   comment_user_verification: true
   favicon: true
 logo:
-  use_default: false
+  use_default: true
   path: 'public://logo-white.png'
 favicon:
   use_default: true
