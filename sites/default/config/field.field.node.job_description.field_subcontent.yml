@@ -11,7 +11,7 @@ id: node.job_description.field_subcontent
 field_name: field_subcontent
 entity_type: node
 bundle: job_description
-label: Subcontent
+label: 'Job Details'
 description: 'Add some other requirements as needed'
 required: false
 translatable: true

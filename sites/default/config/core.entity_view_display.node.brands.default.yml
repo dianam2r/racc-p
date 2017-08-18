@@ -1,0 +1,53 @@
+uuid: 5c8fdd6c-8736-4258-b2cf-2deb52819e9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.brands.body
+    - field.field.node.brands.field_image
+    - field.field.node.brands.field_url
+    - node.type.brands
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.brands.default
+targetEntityType: node
+bundle: brands
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 102
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_url:
+    weight: 103
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

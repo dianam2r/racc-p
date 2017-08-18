@@ -10,7 +10,7 @@ field_name: field_description
 entity_type: node
 bundle: current_posting_item
 label: Description
-description: ''
+description: 'Could be the same title'
 required: true
 translatable: false
 default_value: {  }

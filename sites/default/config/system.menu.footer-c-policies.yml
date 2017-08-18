@@ -1,0 +1,8 @@
+uuid: 94345fbc-788a-498a-be14-501d5f99a9d4
+langcode: en
+status: true
+dependencies: {  }
+id: footer-c-policies
+label: 'Footer C Policies'
+description: Policies
+locked: false

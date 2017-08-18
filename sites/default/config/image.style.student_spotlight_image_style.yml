@@ -1,0 +1,16 @@
+uuid: 0212890e-4a67-417e-a6d6-56585ac3446b
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: student_spotlight_image_style
+label: 'Student Spotlight Image Style'
+effects:
+  9c759b53-2d59-421d-8157-90a3d625c3ba:
+    uuid: 9c759b53-2d59-421d-8157-90a3d625c3ba
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 373
+      height: 351

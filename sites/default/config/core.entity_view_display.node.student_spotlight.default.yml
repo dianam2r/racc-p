@@ -1,0 +1,40 @@
+uuid: 26887ea0-224e-435d-9ab0-61f2ad2de606
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.student_spotlight.body
+    - field.field.node.student_spotlight.field_image
+    - node.type.student_spotlight
+    - responsive_image.styles.document_image_size
+  module:
+    - responsive_image
+    - text
+    - user
+id: node.student_spotlight.default
+targetEntityType: node
+bundle: student_spotlight
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 102
+    label: hidden
+    settings:
+      responsive_image_style: document_image_size
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

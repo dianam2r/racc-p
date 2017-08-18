@@ -1,0 +1,27 @@
+uuid: feb64e25-0fde-4f01-b83b-1db93e841b59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file_attachment
+    - node.type.current_posting_item
+  module:
+    - file
+id: node.current_posting_item.field_file_attachment
+field_name: field_file_attachment
+entity_type: node
+bundle: current_posting_item
+label: 'File Attachment'
+description: 'If it is necessary you can upload a file. Only .pdf allowed'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

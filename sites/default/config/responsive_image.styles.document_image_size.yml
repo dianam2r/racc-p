@@ -1,0 +1,17 @@
+uuid: fd0a9f31-c436-404c-9710-11dce6e13fdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.medium
+id: document_image_size
+label: 'Document Image Size'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large
+breakpoint_group: responsive_image
+fallback_image_style: medium

@@ -1,0 +1,21 @@
+uuid: 9961070d-3fe8-4dfb-96b6-b08aed7b12b3
+langcode: en
+status: true
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    submit_text: 'Sign Up'
+    show_preview: false
+    disabled_form_message: 'This contact form has been disabled.'
+    maximum_submissions_user: 0
+    page_autoreply_format: plain_text
+id: need_more_info
+label: 'Need More Info'
+recipients:
+  - webmaster@test-racc.edu
+reply: ''
+weight: 0
+message: 'Thanks for contacting us!, we''ll reply as soon as possible.'
+redirect: ''

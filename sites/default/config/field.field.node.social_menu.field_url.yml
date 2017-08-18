@@ -1,0 +1,23 @@
+uuid: accdaa15-7b69-4f72-815e-96c9762a6d69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.social_menu
+  module:
+    - link
+id: node.social_menu.field_url
+field_name: field_url
+entity_type: node
+bundle: social_menu
+label: URL
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

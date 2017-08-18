@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.current_posting_item.field_department
     - field.field.node.current_posting_item.field_description
     - field.field.node.current_posting_item.field_due_date
+    - field.field.node.current_posting_item.field_file_attachment
     - field.field.node.current_posting_item.field_performance_bond
     - field.field.node.current_posting_item.field_post_date
     - field.field.node.current_posting_item.field_proposal_number
@@ -16,6 +17,7 @@ dependencies:
     - node.type.current_posting_item
   module:
     - datetime
+    - file
     - text
     - user
 id: node.current_posting_item.default
@@ -70,6 +72,13 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_file_attachment:
+    weight: 11
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
     region: content
   field_performance_bond:
     weight: 7

@@ -1,0 +1,7 @@
+uuid: a98ba41f-86da-4d72-9b8f-7a1a73dfee32
+langcode: en
+status: true
+dependencies: {  }
+name: slider_image_
+label: 'Slider Image Style'
+effects: {  }

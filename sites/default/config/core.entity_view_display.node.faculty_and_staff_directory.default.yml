@@ -4,7 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.faculty_and_staff_directory.body
-    - field.field.node.faculty_and_staff_directory.field_user_profile
+    - field.field.node.faculty_and_staff_directory.field_department
+    - field.field.node.faculty_and_staff_directory.field_email
+    - field.field.node.faculty_and_staff_directory.field_mailbox
+    - field.field.node.faculty_and_staff_directory.field_name
+    - field.field.node.faculty_and_staff_directory.field_office_phone
+    - field.field.node.faculty_and_staff_directory.field_position
+    - field.field.node.faculty_and_staff_directory.field_room
     - node.type.faculty_and_staff_directory
   module:
     - text
@@ -17,20 +23,67 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_user_profile:
-    weight: 102
+  field_department:
+    weight: 3
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_email:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_mailbox:
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_office_phone:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_position:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_room:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   links:
-    weight: 100
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }

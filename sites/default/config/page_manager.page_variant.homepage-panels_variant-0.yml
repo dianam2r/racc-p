@@ -1,0 +1,155 @@
+uuid: 2d514675-57e4-42e7-bd4c-2f42e2ab282e
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.need_more_info
+    - page_manager.page.homepage
+    - views.view.about_racc
+    - views.view.brands
+    - views.view.events
+    - views.view.news
+    - views.view.student_spotlight
+  content:
+    - 'block_content:basic:21d5291f-063d-45bf-84f9-add24d0bc7c6'
+    - 'block_content:basic:4b3f9e4c-af09-40d3-9395-d1096e3bf7db'
+    - 'block_content:basic:78c3df7b-c75c-4d24-b375-5e52b80d19d6'
+    - 'block_content:basic:d7a2b6be-913c-41d3-a9f8-9b4eacce72bf'
+  module:
+    - block_content
+    - contact_block
+    - panels
+    - views
+id: homepage-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    2c1dbd71-e479-4b63-8ade-29d9c5f8ea5f:
+      id: 'views_block:news-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: second
+      weight: 1
+      uuid: 2c1dbd71-e479-4b63-8ade-29d9c5f8ea5f
+      context_mapping: {  }
+    9a4a75de-9a67-463b-ae26-5c8d03e2f4e4:
+      id: 'views_block:events-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: bottom
+      weight: 1
+      uuid: 9a4a75de-9a67-463b-ae26-5c8d03e2f4e4
+      context_mapping: {  }
+    6bf63fe4-53ad-4a9a-aaba-49df7dcc0324:
+      id: 'views_block:student_spotlight-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      region: first
+      weight: 1
+      context_mapping: {  }
+      uuid: 6bf63fe4-53ad-4a9a-aaba-49df7dcc0324
+    cff20eea-6c5f-4b57-87c4-8910920dbcb6:
+      id: contact_block
+      label: 'Need More Info'
+      provider: contact_block
+      label_display: visible
+      contact_form: need_more_info
+      region: bottom
+      weight: 3
+      uuid: cff20eea-6c5f-4b57-87c4-8910920dbcb6
+      context_mapping: {  }
+    52810115-c8c9-4c8f-abf1-dd6cd43cf31b:
+      id: 'block_content:78c3df7b-c75c-4d24-b375-5e52b80d19d6'
+      label: 'Information Phone Number'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      context_mapping: {  }
+      region: bottom
+      uuid: 52810115-c8c9-4c8f-abf1-dd6cd43cf31b
+      weight: 4
+    5b2b2e24-c42d-48d0-a8d1-932602b69829:
+      id: 'block_content:21d5291f-063d-45bf-84f9-add24d0bc7c6'
+      label: 'Featured News Title'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      context_mapping: {  }
+      region: top
+      uuid: 5b2b2e24-c42d-48d0-a8d1-932602b69829
+      weight: 2
+    6e3b39d4-2b03-48e9-9d16-6f150615031e:
+      id: 'views_block:about_racc-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      context_mapping: {  }
+      region: bottom
+      uuid: 6e3b39d4-2b03-48e9-9d16-6f150615031e
+      weight: 5
+    806f1195-e0e9-4536-b974-3d3d2aac4612:
+      id: 'views_block:brands-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: none
+      context_mapping: {  }
+      region: bottom
+      uuid: 806f1195-e0e9-4536-b974-3d3d2aac4612
+      weight: 6
+    5ce6e704-7e5c-4c32-b741-fdb606eaeac6:
+      id: 'block_content:d7a2b6be-913c-41d3-a9f8-9b4eacce72bf'
+      label: 'Apply for RACC'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      context_mapping: {  }
+      region: top
+      uuid: 5ce6e704-7e5c-4c32-b741-fdb606eaeac6
+      weight: 1
+    3fd107c3-bbc8-4439-88d1-1c82e81f6398:
+      id: 'block_content:4b3f9e4c-af09-40d3-9395-d1096e3bf7db'
+      label: 'Get Connected'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      context_mapping: {  }
+      region: bottom
+      uuid: 3fd107c3-bbc8-4439-88d1-1c82e81f6398
+      weight: 2
+  id: panels_variant
+  uuid: c65e440e-307e-4ce4-b2cd-94c7d7a2b264
+  label: null
+  weight: 0
+  layout: layout_twocol
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: homepage-panels_variant-0
+  builder: ipe
+page: homepage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

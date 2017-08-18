@@ -6,8 +6,9 @@ dependencies:
     - field.field.node.document.body
     - field.field.node.document.field_photo
     - node.type.document
+    - responsive_image.styles.document_image_size
   module:
-    - image
+    - responsive_image
     - text
     - user
 id: node.document.default
@@ -24,14 +25,16 @@ content:
     region: content
   field_photo:
     weight: 102
-    label: above
+    label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: document_image_size
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

@@ -1,0 +1,24 @@
+uuid: 8a7b3949-de62-4a7f-8e11-9f1965a3116e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-d-login-center
+  module:
+    - system
+  theme:
+    - bartik
+id: footerdlogincenter
+theme: bartik
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-d-login-center'
+settings:
+  id: 'system_menu_block:footer-d-login-center'
+  label: 'Footer D Login Center'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

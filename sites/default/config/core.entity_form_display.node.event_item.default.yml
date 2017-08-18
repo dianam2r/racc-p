@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.event_item.body
+    - field.field.node.event_item.field_event_date
     - field.field.node.event_item.field_image
     - field.field.node.event_item.field_place_event
     - field.field.node.event_item.field_tag_event
@@ -11,6 +12,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.event_item
   module:
+    - datetime
     - image
     - path
     - text
@@ -21,7 +23,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 10
+    weight: 9
     settings:
       rows: 9
       summary_rows: 3
@@ -34,8 +36,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image:
+  field_event_date:
     weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_image:
+    weight: 10
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail

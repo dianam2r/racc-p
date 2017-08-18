@@ -1,0 +1,19 @@
+uuid: 9e5cb5ad-def2-4e9b-a73a-8a0d22ca474d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room
+    - node.type.faculty_and_staff_directory
+id: node.faculty_and_staff_directory.field_room
+field_name: field_room
+entity_type: node
+bundle: faculty_and_staff_directory
+label: Room
+description: 'Office or classroom where people can go'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,8 @@
+uuid: bc3520c9-c12d-41db-a12f-945572840799
+langcode: en
+status: true
+dependencies: {  }
+id: footer-d-login-center
+label: 'Footer D Login Center'
+description: 'Login Center'
+locked: false

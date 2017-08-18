@@ -1,0 +1,16 @@
+uuid: 18ef20a4-4d46-4c53-ae39-bf687aa63a40
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: featured_ne
+label: 'Featured News'
+effects:
+  3879dd0f-d3e3-4077-9531-f46d1558ec28:
+    uuid: 3879dd0f-d3e3-4077-9531-f46d1558ec28
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 364
+      height: 351

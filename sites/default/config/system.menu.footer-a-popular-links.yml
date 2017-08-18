@@ -1,0 +1,8 @@
+uuid: 252de8bd-133d-4765-bf3e-aad3264094bd
+langcode: en
+status: true
+dependencies: {  }
+id: footer-a-popular-links
+label: 'Footer A Popular Links'
+description: 'Popular Links'
+locked: false

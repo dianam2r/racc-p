@@ -1,0 +1,21 @@
+uuid: 5126d6e6-5596-41f0-944b-886c1b93cc69
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_media_file
+field_name: field_media_file
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -11,7 +11,7 @@ id: node.slider.field_image
 field_name: field_image
 entity_type: node
 bundle: slider
-label: Images
+label: Image
 description: ''
 required: true
 translatable: true

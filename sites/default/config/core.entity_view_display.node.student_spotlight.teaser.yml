@@ -1,0 +1,28 @@
+uuid: 28f2998e-c1b0-44a3-a1e7-5d6a90cb50a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.student_spotlight.body
+    - node.type.student_spotlight
+  module:
+    - text
+    - user
+id: node.student_spotlight.teaser
+targetEntityType: node
+bundle: student_spotlight
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: 80f00954-c3d5-447f-8f36-cabe0f5979b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-b-contact-informatio
+  module:
+    - system
+  theme:
+    - bartik
+id: footerbcontactinformation
+theme: bartik
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-b-contact-informatio'
+settings:
+  id: 'system_menu_block:footer-b-contact-informatio'
+  label: 'Footer B Contact Information'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

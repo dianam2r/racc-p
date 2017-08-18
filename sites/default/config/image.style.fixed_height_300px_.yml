@@ -1,0 +1,15 @@
+uuid: ca4ef131-2c1e-46c6-864c-4c80483d3570
+langcode: en
+status: true
+dependencies: {  }
+name: fixed_height_300px_
+label: 'Fixed Height (300px)'
+effects:
+  dd36dbcc-637d-4520-bbc3-59dec5db2af2:
+    uuid: dd36dbcc-637d-4520-bbc3-59dec5db2af2
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 300
+      upscale: true

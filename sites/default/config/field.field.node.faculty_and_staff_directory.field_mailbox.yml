@@ -1,0 +1,19 @@
+uuid: 3ab8abc7-d3d7-4ec7-8314-2815e20023cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mailbox
+    - node.type.faculty_and_staff_directory
+id: node.faculty_and_staff_directory.field_mailbox
+field_name: field_mailbox
+entity_type: node
+bundle: faculty_and_staff_directory
+label: Mailbox
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

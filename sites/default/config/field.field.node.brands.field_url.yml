@@ -1,0 +1,23 @@
+uuid: 47b6dd1f-0cc7-41bc-82e4-a9e90f43e238
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.brands
+  module:
+    - link
+id: node.brands.field_url
+field_name: field_url
+entity_type: node
+bundle: brands
+label: URL
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,19 @@
+uuid: 564ee6b7-eb4a-4018-8c1f-5b6f192257df
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - account
+    parent: 'main:'
+name: 'Student Spotlight'
+type: student_spotlight
+description: 'This is used to highlight those students with notable skills'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

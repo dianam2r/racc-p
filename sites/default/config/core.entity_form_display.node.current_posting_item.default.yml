@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.current_posting_item.field_department
     - field.field.node.current_posting_item.field_description
     - field.field.node.current_posting_item.field_due_date
+    - field.field.node.current_posting_item.field_file_attachment
     - field.field.node.current_posting_item.field_performance_bond
     - field.field.node.current_posting_item.field_post_date
     - field.field.node.current_posting_item.field_proposal_number
@@ -16,6 +17,7 @@ dependencies:
     - node.type.current_posting_item
   module:
     - datetime
+    - file
     - path
     - text
 id: node.current_posting_item.default
@@ -55,7 +57,7 @@ content:
     type: string_textfield
     region: content
   field_department:
-    weight: 8
+    weight: 9
     settings:
       match_operator: CONTAINS
       size: 60
@@ -64,7 +66,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_description:
-    weight: 9
+    weight: 6
     settings:
       size: 60
       placeholder: ''
@@ -77,6 +79,13 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_file_attachment:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
   field_performance_bond:
     weight: 12
     settings:
@@ -86,13 +95,13 @@ content:
     type: string_textfield
     region: content
   field_post_date:
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_proposal_number:
-    weight: 7
+    weight: 8
     settings:
       size: 60
       placeholder: ''

@@ -1,0 +1,17 @@
+uuid: 4b647de2-15f2-49fc-962e-67e18f95c545
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.medium
+id: featured_news_image_size
+label: 'Featured News Image Size'
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large
+breakpoint_group: responsive_image
+fallback_image_style: medium

@@ -1,0 +1,28 @@
+uuid: 58fec95c-4204-449b-8f19-bd29a845703d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_menu.body
+    - node.type.social_menu
+  module:
+    - text
+    - user
+id: node.social_menu.teaser
+targetEntityType: node
+bundle: social_menu
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

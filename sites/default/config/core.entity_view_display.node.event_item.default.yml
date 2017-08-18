@@ -4,14 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.node.event_item.body
+    - field.field.node.event_item.field_event_date
     - field.field.node.event_item.field_image
     - field.field.node.event_item.field_place_event
     - field.field.node.event_item.field_tag_event
     - field.field.node.event_item.field_time_event
-    - image.style.large
     - node.type.event_item
+    - responsive_image.styles.document_image_size
   module:
-    - image
+    - datetime
+    - responsive_image
     - text
     - user
 id: node.event_item.default
@@ -26,34 +28,35 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_image:
+  field_event_date:
     weight: 1
     label: hidden
     settings:
-      image_style: large
+      timezone_override: ''
+      date_format: 'M d, Y'
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  field_image:
+    weight: 4
+    label: hidden
+    settings:
+      responsive_image_style: document_image_size
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_place_event:
     weight: 3
-    label: visually_hidden
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_tag_event:
-    weight: 6
-    label: visually_hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_time_event:
     weight: 2
-    label: visually_hidden
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -64,4 +67,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_tag_event: true

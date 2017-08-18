@@ -1,0 +1,19 @@
+uuid: 171b0a8c-60d4-47c9-a6df-dfab6a59c665
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - account
+    parent: 'main:'
+name: Videos
+type: videos
+description: 'Requirements to upload videos and display them in a content'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

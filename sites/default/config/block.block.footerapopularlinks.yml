@@ -1,0 +1,24 @@
+uuid: 720f5a60-6f64-47f2-a0df-4bdab5caf071
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-a-popular-links
+  module:
+    - system
+  theme:
+    - bartik
+id: footerapopularlinks
+theme: bartik
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-a-popular-links'
+settings:
+  id: 'system_menu_block:footer-a-popular-links'
+  label: 'Footer A Popular Links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

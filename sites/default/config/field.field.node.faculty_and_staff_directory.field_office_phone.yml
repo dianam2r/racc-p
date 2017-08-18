@@ -1,0 +1,19 @@
+uuid: d2ff1708-5a3a-462d-bf1c-c4bba1968949
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_office_phone
+    - node.type.faculty_and_staff_directory
+id: node.faculty_and_staff_directory.field_office_phone
+field_name: field_office_phone
+entity_type: node
+bundle: faculty_and_staff_directory
+label: Phone
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

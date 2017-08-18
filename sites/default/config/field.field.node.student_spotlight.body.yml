@@ -1,0 +1,22 @@
+uuid: a90e5041-8b9b-4715-a7bc-e0a1727da269
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.student_spotlight
+  module:
+    - text
+id: node.student_spotlight.body
+field_name: body
+entity_type: node
+bundle: student_spotlight
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

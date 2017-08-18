@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.node.slider.field_image
     - field.field.node.slider.field_slider_message
+    - field.field.node.slider.field_url
     - image.style.thumbnail
     - node.type.slider
   module:
     - image
+    - link
     - path
     - text
 id: node.slider.default
@@ -37,6 +39,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_url:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   path:
     type: path

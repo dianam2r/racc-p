@@ -1,0 +1,30 @@
+uuid: 8a99d266-36d6-4cc5-8b63-85e71861069b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__slider_block_1
+theme: bartik
+region: featured_top
+weight: 0
+provider: null
+plugin: 'views_block:slider-block_1'
+settings:
+  id: 'views_block:slider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/homepage"
+    negate: false
+    context_mapping: {  }

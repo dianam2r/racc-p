@@ -1,0 +1,19 @@
+uuid: fe1cd1e0-5491-4c87-8d45-c0dc687d19b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.need_more_info
+    - field.storage.contact_message.field_name
+id: contact_message.need_more_info.field_name
+field_name: field_name
+entity_type: contact_message
+bundle: need_more_info
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

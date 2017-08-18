@@ -1,0 +1,19 @@
+uuid: 320295e6-bc7f-43d6-ad09-dbf8d6f06ce5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - account
+    parent: 'main:'
+name: 'Social Menu'
+type: social_menu
+description: 'Here you can find the different social media links of RACC'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

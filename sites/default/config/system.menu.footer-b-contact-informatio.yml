@@ -1,0 +1,8 @@
+uuid: 67af63fe-85ec-4fd0-b3f1-3e47f33a2065
+langcode: en
+status: true
+dependencies: {  }
+id: footer-b-contact-informatio
+label: 'Footer B Contact Information'
+description: 'Contact Information'
+locked: false

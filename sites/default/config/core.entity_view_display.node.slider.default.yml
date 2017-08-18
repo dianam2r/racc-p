@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.field.node.slider.field_image
     - field.field.node.slider.field_slider_message
-    - image.style.news
+    - field.field.node.slider.field_url
     - node.type.slider
+    - responsive_image.styles.wide
   module:
-    - image
+    - link
+    - responsive_image
     - text
     - user
 id: node.slider.default
@@ -20,10 +22,10 @@ content:
     weight: 1
     label: hidden
     settings:
-      image_style: news
+      responsive_image_style: wide
       image_link: content
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_slider_message:
     weight: 2
@@ -31,6 +33,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_url:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 0

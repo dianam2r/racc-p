@@ -1,0 +1,22 @@
+uuid: 426c9216-4d66-447a-b20c-1172156b3806
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.brands
+  module:
+    - text
+id: node.brands.body
+field_name: body
+entity_type: node
+bundle: brands
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

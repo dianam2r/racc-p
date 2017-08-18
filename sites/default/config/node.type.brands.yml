@@ -1,0 +1,19 @@
+uuid: 68567272-12a9-4dfb-826a-6c68708ccd68
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - account
+    parent: 'main:'
+name: Brands
+type: brands
+description: 'These are the brands that support RACC'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
