@@ -1,0 +1,24 @@
+uuid: 1b37c6ba-5ab4-47c7-89aa-7411e1bcefc3
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer-a-popular-links
+  module:
+    - system
+  theme:
+    - zurb_foundation
+id: zurb_foundation_footerapopularlinks
+theme: zurb_foundation
+region: content
+weight: 2
+provider: null
+plugin: 'system_menu_block:footer-a-popular-links'
+settings:
+  id: 'system_menu_block:footer-a-popular-links'
+  label: 'Footer A Popular Links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: c532a001-54b9-42c5-af0c-68159148ae40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tabs.field_link
+    - paragraphs.paragraphs_type.tabs
+  module:
+    - link
+id: paragraph.tabs.default
+targetEntityType: paragraph
+bundle: tabs
+mode: default
+content:
+  field_link:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

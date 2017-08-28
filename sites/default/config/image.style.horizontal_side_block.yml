@@ -1,0 +1,16 @@
+uuid: 4292f213-74b5-499c-860f-fde7d1e9e518
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: horizontal_side_block
+label: 'Horizontal Side Block'
+effects:
+  cd3e14fe-62ff-41c9-add5-69ff2a5ff70e:
+    uuid: cd3e14fe-62ff-41c9-add5-69ff2a5ff70e
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 811
+      height: 388

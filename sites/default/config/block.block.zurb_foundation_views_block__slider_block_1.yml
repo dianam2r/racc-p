@@ -1,0 +1,30 @@
+uuid: 42cc6805-250c-4e48-994b-c72e02098ab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - system
+    - views
+  theme:
+    - zurb_foundation
+id: zurb_foundation_views_block__slider_block_1
+theme: zurb_foundation
+region: header
+weight: -11
+provider: null
+plugin: 'views_block:slider-block_1'
+settings:
+  id: 'views_block:slider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/homepage"
+    negate: false
+    context_mapping: {  }

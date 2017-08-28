@@ -1,0 +1,30 @@
+uuid: 1a9ab97c-161e-4ebd-9f1d-6c6c0a1c804a
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - zurb_foundation
+id: zurb_foundation_views_block__news_block_1
+theme: zurb_foundation
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

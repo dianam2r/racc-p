@@ -1,0 +1,30 @@
+uuid: a771ae1b-d5ce-4b53-a2f0-8e42304070dc
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - system
+    - views
+  theme:
+    - racctheme
+id: racctheme_views_block__events_block_1
+theme: racctheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:events-block_1'
+settings:
+  id: 'views_block:events-block_1'
+  label: 'Upcoming Events'
+  provider: views
+  label_display: visible
+  views_label: 'Upcoming Events'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

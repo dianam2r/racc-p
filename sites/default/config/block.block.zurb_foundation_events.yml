@@ -1,0 +1,29 @@
+uuid: 81b1df30-c2e0-41b4-b5cb-014af42e3a76
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.events
+  module:
+    - system
+  theme:
+    - zurb_foundation
+id: zurb_foundation_events
+theme: zurb_foundation
+region: content
+weight: -4
+provider: null
+plugin: 'system_menu_block:events'
+settings:
+  id: 'system_menu_block:events'
+  label: Events
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: /events
+    negate: false
+    context_mapping: {  }

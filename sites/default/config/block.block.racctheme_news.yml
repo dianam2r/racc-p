@@ -1,0 +1,29 @@
+uuid: caf420d1-e78a-4ec8-b642-68e2f967ab52
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.news
+  module:
+    - system
+  theme:
+    - racctheme
+id: racctheme_news
+theme: racctheme
+region: content
+weight: -5
+provider: null
+plugin: 'system_menu_block:news'
+settings:
+  id: 'system_menu_block:news'
+  label: News
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: /news
+    negate: false
+    context_mapping: {  }

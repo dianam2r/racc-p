@@ -1,0 +1,24 @@
+uuid: 8bf57618-7f21-479d-84f8-778d569bbf1b
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer-b-contact-informatio
+  module:
+    - system
+  theme:
+    - zurb_foundation
+id: zurb_foundation_footerbcontactinformation
+theme: zurb_foundation
+region: content
+weight: 3
+provider: null
+plugin: 'system_menu_block:footer-b-contact-informatio'
+settings:
+  id: 'system_menu_block:footer-b-contact-informatio'
+  label: 'Footer B Contact Information'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

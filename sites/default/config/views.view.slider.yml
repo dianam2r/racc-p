@@ -90,9 +90,9 @@ display:
           overridables:
             arrows: arrows
             autoplay: autoplay
-            dots: '0'
+            dots: dots
+            infinite: infinite
             draggable: '0'
-            infinite: '0'
             mouseWheel: '0'
             randomize: '0'
             variableWidth: '0'
@@ -137,7 +137,7 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: ''
+          element_type: h1
           element_class: ''
           element_label_type: ''
           element_label_class: ''
@@ -301,7 +301,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ field_slider_message }}'
+            text: "<h1>{{ title }}</h1>\n\n{{ field_slider_message }}"
             make_link: false
             path: ''
             absolute: false

@@ -1,0 +1,22 @@
+uuid: 0f30a61f-daeb-4ea3-aa84-ae855315cec4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - racctheme
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: racctheme_local_tasks
+theme: racctheme
+region: content
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

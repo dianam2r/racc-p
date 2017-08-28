@@ -1,0 +1,30 @@
+uuid: d4ebc901-2a59-4d52-80b7-87fdc31480ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider
+  module:
+    - system
+    - views
+  theme:
+    - racctheme
+id: racctheme_views_block__slider_block_1
+theme: racctheme
+region: header
+weight: -10
+provider: null
+plugin: 'views_block:slider-block_1'
+settings:
+  id: 'views_block:slider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/homepage"
+    negate: false
+    context_mapping: {  }

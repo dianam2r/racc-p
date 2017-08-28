@@ -1,19 +1,31 @@
-uuid: 8b2f383e-5623-4073-945a-e92a681986d0
+uuid: 6bf4fdbd-2520-4861-add4-c3aa56bdc58a
 langcode: en
 status: true
 dependencies:
   config:
-    - page_manager.page.homepage
+    - page_manager.page.index
     - views.view.horizontal_side_block
+    - views.view.slider
   module:
     - panels
     - views
-id: homepage-panels_variant-0
-label: Homepage
+id: index-panels_variant-0
+label: Panels
 variant: panels_variant
 variant_settings:
   blocks:
-    0254e422-e51d-4fa6-b644-10dd6f298829:
+    7e694d24-d04b-43d7-8440-65e6119577b8:
+      id: 'views_block:slider-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: 0
+      uuid: 7e694d24-d04b-43d7-8440-65e6119577b8
+      context_mapping: {  }
+    3926add0-beca-4c18-8a61-e779d996603a:
       id: 'views_block:horizontal_side_block-block_1'
       label: ''
       provider: views
@@ -22,19 +34,19 @@ variant_settings:
       items_per_page: none
       region: top
       weight: 0
-      uuid: 0254e422-e51d-4fa6-b644-10dd6f298829
+      uuid: 3926add0-beca-4c18-8a61-e779d996603a
       context_mapping: {  }
   id: panels_variant
-  uuid: a6e533a5-8b62-430a-9889-f25ab9aa6ba1
+  uuid: b392f99f-f39d-47be-856c-9f0bbe11dd39
   label: null
   weight: 0
   layout: layout_twocol
   layout_settings: {  }
   page_title: ''
   storage_type: page_manager
-  storage_id: homepage-panels_variant-0
+  storage_id: index-panels_variant-0
   builder: ipe
-page: homepage
+page: index
 weight: 0
 selection_criteria: {  }
 selection_logic: and

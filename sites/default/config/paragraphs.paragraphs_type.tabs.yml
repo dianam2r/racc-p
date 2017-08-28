@@ -1,0 +1,7 @@
+uuid: 0e9cf41d-4431-47e2-91c2-d0bb8cd1f9da
+langcode: en
+status: true
+dependencies: {  }
+id: tabs
+label: Tabs
+behavior_plugins: {  }

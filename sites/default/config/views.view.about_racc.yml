@@ -560,13 +560,14 @@ display:
       path: about-racc
       menu:
         type: normal
-        title: ABOUT
+        title: 'ABOUT RACC'
         description: 'Information about RACC'
         expanded: true
         parent: ''
         weight: -47
         context: '0'
         menu_name: main
+        enabled: true
     cache_metadata:
       max-age: -1
       contexts:

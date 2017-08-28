@@ -1,0 +1,12 @@
+uuid: a7f21003-c600-4ebc-9ada-f535b2969817
+langcode: en
+status: true
+dependencies: {  }
+id: index
+label: Index
+description: 'This is another homepage'
+use_admin_theme: false
+path: /index
+access_logic: and
+access_conditions: {  }
+parameters: {  }

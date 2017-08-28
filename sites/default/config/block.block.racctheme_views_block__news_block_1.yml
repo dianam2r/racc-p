@@ -1,0 +1,30 @@
+uuid: e03695d2-ff89-4dcd-babb-2bb9a3439d63
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - racctheme
+id: racctheme_views_block__news_block_1
+theme: racctheme
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
