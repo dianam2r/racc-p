@@ -1,0 +1,45 @@
+/*-----------------------------------*/
+/* BASIC SETTINGS FOR ALL HTML PAGES */
+/*-----------------------------------*/
+
+$max-width-desktop : 1600px;
+$max-width-mobile: 375px;
+$content-font : Open Sans, sans-serif;
+$title-font : Raleway, sans-serif;
+$simbols-font: FontAwesome;
+$color-red : #F23522;
+$color-dark-red: #c51c0c;
+$color-white : #FFF;
+$color-white-transparent : rgba(255,255,255, 0.7);
+$color-black : #000;
+$color-gray-one : #87888e;
+$color-gray-two : #999ba1;
+$color-gray-three : #bbbbbf;
+$color-gray-four : #cfcfd2;
+$color-gray-five : #595859;
+$color-gray-title : #6c798e;
+$color-bg-sponsors : #C0BFBF;
+$color-bg-footer : #323339;
+$color-gray-hover: #EAEAEA;
+
+$susy-columns: 12;
+$susy: (
+  columns: susy-repeat($susy-columns),
+  gutters: 0.25,
+);
+
+@mixin phone {
+    @media only screen and (max-width: 375px){
+      @content;
+    }
+}
+
+@mixin standard-settings {
+  background-color: $color-white;
+  text-rendering: optimizeLegibility;
+  width: $max-width-desktop;
+  font-weight: 300;
+  @include phone {
+    width: $max-width-mobile;
+  }
+}

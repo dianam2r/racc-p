@@ -1,0 +1,30 @@
+/*----------------------------*/
+/* ENROLL NOW - ONLY MOBILE - */
+/*----------------------------*/
+
+.enroll-now-mobile {
+  background-color: $color-red;
+  height: 84px;
+  @include flex-direction(column);
+  @include flex-wrap(wrap);
+  @include align-items(center);
+  @include align-content(center);
+  display: none;
+  a {
+    background-color: $color-white;
+    text-decoration: none;
+    color: $color-black;
+    font-family: $content-font;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 9px 51px;
+    margin-top: 23px;
+    @include align-self(auto);
+  }
+  @include phone {
+    @include flexbox;
+    margin-top: -30px;
+  }
+}

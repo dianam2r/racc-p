@@ -1,0 +1,365 @@
+/*-------------------------------------------*/
+/* HEADER SECTION */
+/*-------------------------------------------*/
+
+@mixin nav-bar($color-font, $color-bg, $color-bg-hover, $alto, $tam-fuente, $peso) {
+  background-color: $color-bg;
+  @include inline-flex;
+  @include flex-wrap(wrap);
+  float: left;
+  height: $alto;
+  width: 1163px;
+  list-style: none;
+  @include phone {
+    display: none;
+  }
+  @include align-items(center);
+  li {
+    padding: 0px 0;
+    @include align-self(auto);
+    &:hover {
+      background-color: $color-bg-hover;
+      line-height: 3;
+      a {
+        font-weight: 400;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $color-font;
+      font-size: $tam-fuente;
+      font-weight: $peso;
+      letter-spacing: 2px;
+      i {
+        position: relative;
+        padding-left: 39px;
+        font-size: 27px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+header {
+  .row-header {
+    position: relative;
+    z-index: 2;
+    width: susy-span(12);
+    .start-line {
+      display: none;
+      @include phone {
+        display: block;
+        position: absolute;
+        border: 0;
+        height: 7px;
+        width: $max-width-mobile;
+        background-color: $color-red;
+        span {
+          content: ".";
+          visibility: hidden;
+        }
+      }
+    }
+    background-color: $color-white-transparent;
+    margin: 0 auto;
+    text-transform: uppercase;
+    height: auto;
+    @include inline-flex;
+    .row-header-logo {
+      @include inline-flex;
+      @include align-items(center);
+      padding-left: 52px;
+      @include phone {
+        padding-left: 75px;
+        padding-top: 4px;
+      }
+      img {
+        @include align-self(auto);
+        width: 173px;
+        height: auto;
+        @include phone {
+            width: 95px;
+        }
+      }
+    }
+    .row-header-nav {
+      font-family: $title-font;
+      text-decoration: none;
+      width: susy-span(6);
+      padding-left: 212px;
+      @include phone {
+        padding-left: 100px;
+      }
+      .search-link {
+        display: none;
+        @include phone {
+          display: block;
+          position: absolute;
+          padding-top: 16px;
+          a {
+            &::before {
+              content: '\f002';
+              color: $color-black;
+              font-family: $simbols-font;
+              font-size : 28px;
+            }
+          }
+        }
+      }
+      label {
+        margin: 0 40px 0 0;
+        padding: 0px 166px;
+        font-size: 37px;
+        line-height: 72px;
+        width: 26px;
+        display: none;
+        @include phone {
+          display: block;
+          margin: 5px -6px 0 0;
+          padding: 0px 56px;
+          line-height: 62px;
+          cursor: pointer;
+        }
+      }
+      #toggle {
+        display: none;
+        @include phone {
+          #toggle:not(:checked) ~ .menu-container {
+            display: none;
+          }
+        }
+      }
+      .second-nav {
+        @include nav-bar($color-white, $color-red, $color-dark-red, $alto:46px, $tam-fuente:12px, $peso:300);
+        margin-left: 0;
+        margin-bottom: 0;
+        position: absolute;
+        z-index: 1;
+        li {
+          padding-left: 45px;
+          padding-right: 28px;
+          a {
+            word-spacing: 2px;
+          }
+          &:hover {
+            line-height: 3.1;
+          }
+          &:last-child {
+            margin-bottom: 3px;
+            a {
+              &::after {
+                content: '\f002';
+                padding-left: 26px;
+                font-family: $simbols-font;
+                color: $color-white;
+                font-weight: 400;
+                font-size: 19px;
+              }
+            }
+            &:hover {
+              line-height: 2.6;
+            }
+          }
+        }
+      }
+      .first-nav {
+        background-color: inherit;
+      }
+      .menu-container {
+        width: 1100px;
+        margin-top: 46px;
+        @include phone {
+          display: none;
+        }
+      }
+      .menu {
+        li {
+          //padding-left: 18px;
+          //padding-right: 34.5px;
+          padding-left: 3px;
+          padding-right: 25px;
+          height: 60px;
+          &:hover {
+            background-color: $color-white;
+            line-height: 4;
+          }
+          a {
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            color: $color-black;
+            font-weight: 600;
+          }
+        }
+        ul {
+          border-color: $color-white;
+          width: susy-span(2.5);
+          li {
+            vertical-align: middle;
+            height: auto;
+            padding-left: 20px;
+            padding-right: 0.5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            &:hover {
+              background-color: $color-gray-hover;
+              border-color: $color-gray-hover;
+            }
+            a {
+              font-size: 12px;
+              font-weight: 300;
+              &:hover {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+      .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+        visibility: hidden;
+      }
+    }
+  }
+  .slider-container {
+    margin-top: -106px;
+    &:hover {
+      .slick__arrow {
+        visibility: visible;
+      }
+    }
+    .slick__arrow {
+      top: 42.6%;
+      visibility: hidden;
+      @include phone {
+        top: 50.6%;
+        visibility: visible;
+      }
+    }
+    .slick-prev {
+      left: 1.1%;
+      @include phone {
+        left: 2.8%;
+      }
+      &::before {
+        content: url('../img/prev.png');
+        font-family: $simbols-font;
+        color: $color-white;
+        font-weight: 100;
+        font-size: 60px;
+      }
+    }
+    .slick-next {
+      right: 1.8%;
+      @include phone {
+        right: 3.8%
+      }
+      &::before {
+        content: url('../img/next.png');
+        font-family: $simbols-font;
+        color: $color-white;
+        font-weight: 100;
+        font-size: 60px;
+      }
+    }
+    .slick-arrow {
+      width: 52px;
+      height: 52px;
+    }
+  }
+  .slide__caption {
+    h1 {
+      width: 500px;
+      line-height: 1;
+      @include phone {
+        width: 300px;
+      }
+      a {
+        color: $color-white;
+        font-size: 44px;
+        font-weight: 200;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        word-spacing: -2.5px;
+        line-height: 1.1;
+        padding-bottom: 28px;
+        @include phone {
+          font-size: 33px;
+        }
+        &:hover {
+          color: $color-red;
+        }
+      }
+    }
+    p {
+      width: 500px;
+      color: $color-white;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-left: -3px;
+      @include phone {
+        display: none;
+      }
+      a {
+        color: $color-white;
+      }
+    }
+  }
+
+  .slide--caption--bottom .slide__caption {
+    top: 33.7%;
+    left: 9.7%;
+    @include phone {
+      position: absolute;
+      top: 66.2%;
+      left: 7.8%;
+    }
+  }
+
+  .slick-dots {
+    width: auto;
+    bottom: 657px;
+    left: 170px;
+    @include phone {
+      //bottom: 438px;
+      bottom: 14px;
+      left: 121px;
+    }
+    li {
+      border-top: 2px solid $color-white;
+      width: 51px;
+      height: 41px;
+      @include phone {
+        width: 24px;
+        height: 14px;
+        margin: 0 8px;
+      }
+      &:hover {
+        border-top: 2px solid $color-red;
+      }
+      button {
+        visibility: hidden;
+        width: 51px;
+        height: 41px;
+        @include phone {
+          width: 24px;
+          height: 14px;
+        }
+      }
+    }
+    li.slick-active {
+      border-top: 2px solid $color-red;
+    }
+  }
+
+  .slick img {
+    filter: brightness(0.6) opacity(0.95) ;
+    @include phone {
+      height: 485px;
+    }
+  }
+
+  .slick-dotted.slick-slider {
+    @include phone {
+      margin-bottom: 11px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+racctheme.mobile:
+  label: mobile
+  mediaQuery: 'all and (max-width: 375px)'
+  weight: 0
+  multipliers:
+    - 1x
+racctheme.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width: 376px) and (max-width: 850px)'
+  weight: 1
+  multipliers:
+    - 1x
+racctheme.wide:
+  label: wide
+  mediaQuery: 'all and (min-width: 851px)'
+  weight: 2
+  multipliers:
+    - 1x
