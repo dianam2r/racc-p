@@ -6,13 +6,13 @@ racctheme.mobile:
     - 1x
 racctheme.narrow:
   label: narrow
-  mediaQuery: 'all and (min-width: 376px) and (max-width: 850px)'
+  mediaQuery: 'all and (min-width: 376px) and (max-width: 780px)'
   weight: 1
   multipliers:
     - 1x
 racctheme.wide:
   label: wide
-  mediaQuery: 'all and (min-width: 851px)'
+  mediaQuery: 'all and (min-width: 781px)'
   weight: 2
   multipliers:
     - 1x

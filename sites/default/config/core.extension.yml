@@ -46,6 +46,7 @@ module:
   quickedit: 0
   rdf: 0
   responsive_image: 0
+  responsive_menu: 0
   search: 0
   shortcut: 0
   slick: 0

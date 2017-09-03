@@ -5,12 +5,12 @@ dependencies:
   module:
     - focal_point
 name: horizontal_side_block
-label: 'Horizontal Side Block'
+label: 'Horizontal Side Block Large'
 effects:
   cd3e14fe-62ff-41c9-add5-69ff2a5ff70e:
     uuid: cd3e14fe-62ff-41c9-add5-69ff2a5ff70e
     id: focal_point_scale_and_crop
-    weight: 1
+    weight: -9
     data:
       width: 811
       height: 388

@@ -10,10 +10,13 @@
   height: $alto;
   width: 1163px;
   list-style: none;
+  @include align-items(center);
   @include phone {
     display: none;
   }
-  @include align-items(center);
+  @include tablet {
+    display: none;
+  }
   li {
     padding: 0px 0;
     @include align-self(auto);
@@ -30,12 +33,6 @@
       font-size: $tam-fuente;
       font-weight: $peso;
       letter-spacing: 2px;
-      i {
-        position: relative;
-        padding-left: 39px;
-        font-size: 27px;
-        font-weight: 300;
-      }
     }
   }
 }
@@ -52,7 +49,19 @@ header {
         position: absolute;
         border: 0;
         height: 7px;
-        width: $max-width-mobile;
+        width: 100%;
+        background-color: $color-red;
+        span {
+          content: ".";
+          visibility: hidden;
+        }
+      }
+      @include tablet {
+        display: block;
+        position: absolute;
+        border: 0;
+        height: 7px;
+        width: 100%;
         background-color: $color-red;
         span {
           content: ".";
@@ -70,15 +79,35 @@ header {
       @include align-items(center);
       padding-left: 52px;
       @include phone {
-        padding-left: 75px;
+        //padding-left: 75px;
+        padding-left: 0px;
         padding-top: 4px;
+        width: 125vw;
       }
-      img {
-        @include align-self(auto);
-        width: 173px;
-        height: auto;
+      @include tablet {
+        padding-left: 0px;
+        padding-top: 4px;
+        width: 130vw;
+      }
+      div {
         @include phone {
+          padding-left: 10vw;
+          margin-right: 1vw;
+        }
+        @include tablet {
+          padding-left: 10vw;
+          margin-right: 1vw;
+        }
+        img {
+          @include align-self(auto);
+          width: 173px;
+          height: auto;
+          @include phone {
+              width: 95px;
+          }
+          @include tablet {
             width: 95px;
+          }
         }
       }
     }
@@ -88,11 +117,29 @@ header {
       width: susy-span(6);
       padding-left: 212px;
       @include phone {
-        padding-left: 100px;
+        //padding-left: 100px;
+        padding-left: 0px;
+      }
+      @include tablet {
+        //padding-left: 100px;
+        padding-left: 0px;
       }
       .search-link {
         display: none;
         @include phone {
+          display: block;
+          position: absolute;
+          padding-top: 16px;
+          a {
+            &::before {
+              content: '\f002';
+              color: $color-black;
+              font-family: $simbols-font;
+              font-size : 28px;
+            }
+          }
+        }
+        @include tablet {
           display: block;
           position: absolute;
           padding-top: 16px;
@@ -120,15 +167,28 @@ header {
           line-height: 62px;
           cursor: pointer;
         }
+        @include tablet {
+          display: block;
+          margin: 5px -6px 0 0;
+          padding: 0px 56px;
+          line-height: 62px;
+          cursor: pointer;
+        }
       }
       #toggle {
         display: none;
         @include phone {
-          #toggle:not(:checked) ~ .menu-container {
+          #toggle:not(:checked){ //~ .menu-container {
+            display: none;
+          }
+        }
+        @include tablet {
+          #toggle:not(:checked){ //~ .menu-container {
             display: none;
           }
         }
       }
+
       .second-nav {
         @include nav-bar($color-white, $color-red, $color-dark-red, $alto:46px, $tam-fuente:12px, $peso:300);
         margin-left: 0;
@@ -137,7 +197,7 @@ header {
         z-index: 1;
         li {
           padding-left: 45px;
-          padding-right: 28px;
+          padding-right: 1.8vw;
           a {
             word-spacing: 2px;
           }
@@ -166,18 +226,19 @@ header {
         background-color: inherit;
       }
       .menu-container {
-        width: 1100px;
+        width: 1163px;
         margin-top: 46px;
         @include phone {
+          display: none;
+        }
+        @include tablet {
           display: none;
         }
       }
       .menu {
         li {
-          //padding-left: 18px;
-          //padding-right: 34.5px;
           padding-left: 3px;
-          padding-right: 25px;
+          padding-right: 1.5vw;
           height: 60px;
           &:hover {
             background-color: $color-white;
@@ -193,6 +254,12 @@ header {
         ul {
           border-color: $color-white;
           width: susy-span(2.5);
+          @include phone {
+            display: none;
+          }
+          @include tablet {
+            display: none;
+          }
           li {
             vertical-align: middle;
             height: auto;
@@ -219,6 +286,7 @@ header {
       }
     }
   }
+
   .slider-container {
     margin-top: -106px;
     &:hover {
@@ -231,7 +299,7 @@ header {
       visibility: hidden;
       @include phone {
         top: 50.6%;
-        visibility: visible;
+        visibility: hidden;
       }
     }
     .slick-prev {
@@ -250,7 +318,11 @@ header {
     .slick-next {
       right: 1.8%;
       @include phone {
-        right: 3.8%
+        //right: 3.8%;
+        right: 6vw;
+      }
+      @include tablet {
+        right: 6vw;
       }
       &::before {
         content: url('../img/next.png');
@@ -265,12 +337,16 @@ header {
       height: 52px;
     }
   }
+
   .slide__caption {
     h1 {
       width: 500px;
       line-height: 1;
       @include phone {
         width: 300px;
+      }
+      @include tablet {
+        width: 400px;
       }
       a {
         color: $color-white;
@@ -283,6 +359,9 @@ header {
         padding-bottom: 28px;
         @include phone {
           font-size: 33px;
+        }
+        @include tablet {
+          font-size: 35px;
         }
         &:hover {
           color: $color-red;
@@ -298,6 +377,9 @@ header {
       @include phone {
         display: none;
       }
+      @include tablet {
+        display: none;
+      }
       a {
         color: $color-white;
       }
@@ -307,7 +389,13 @@ header {
   .slide--caption--bottom .slide__caption {
     top: 33.7%;
     left: 9.7%;
+    z-index: 1;
     @include phone {
+      position: absolute;
+      top: 66.2%;
+      left: 7.8%;
+    }
+    @include tablet {
       position: absolute;
       top: 66.2%;
       left: 7.8%;
@@ -319,15 +407,23 @@ header {
     bottom: 657px;
     left: 170px;
     @include phone {
-      //bottom: 438px;
       bottom: 14px;
-      left: 121px;
+      left: 35vw;
+    }
+    @include tablet {
+      bottom: 14px;
+      left: 35vw;
     }
     li {
       border-top: 2px solid $color-white;
       width: 51px;
       height: 41px;
       @include phone {
+        width: 24px;
+        height: 14px;
+        margin: 0 8px;
+      }
+      @include tablet {
         width: 24px;
         height: 14px;
         margin: 0 8px;
@@ -343,6 +439,10 @@ header {
           width: 24px;
           height: 14px;
         }
+        @include tablet {
+          width: 24px;
+          height: 14px;
+        }
       }
     }
     li.slick-active {
@@ -350,16 +450,40 @@ header {
     }
   }
 
-  .slick img {
-    filter: brightness(0.6) opacity(0.95) ;
-    @include phone {
-      height: 485px;
-    }
-  }
-
   .slick-dotted.slick-slider {
     @include phone {
       margin-bottom: 11px;
     }
+    @include tablet {
+      margin-bottom: 11px;
+    }
   }
+
+  .slick img {
+    @include phone {
+      height: 485px;
+    }
+    @include tablet {
+      height: 485px;
+    }
+  }
+
+  .slick-img-overlay {
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7));
+    width: 100%;
+    height: 1382px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    @include phone {
+      background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5));
+      height: 485px;
+    }
+    @include tablet {
+      background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5));
+      height: 485px;
+    }
+  }
+
 }

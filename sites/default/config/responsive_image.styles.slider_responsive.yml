@@ -1,0 +1,38 @@
+uuid: 0c4ab111-b65c-4989-8c4a-fdf54bb82df7
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.slider_image_
+    - image.style.slider_image_style_large
+    - image.style.slider_image_style_medium
+  theme:
+    - racctheme
+id: slider_responsive
+label: 'Slider Responsive'
+image_style_mappings:
+  -
+    breakpoint_id: racctheme.wide
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width:781px) 781px, 100vw'
+      sizes_image_styles:
+        - slider_image_style_large
+        - slider_image_style_medium
+  -
+    breakpoint_id: racctheme.narrow
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width:375px) 375px, 100vw'
+      sizes_image_styles:
+        - slider_image_
+        - slider_image_style_medium
+  -
+    breakpoint_id: racctheme.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: slider_image_
+breakpoint_group: racctheme
+fallback_image_style: slider_image_style_medium

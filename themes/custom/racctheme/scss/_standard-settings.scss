@@ -3,6 +3,7 @@
 /*-----------------------------------*/
 
 $max-width-desktop : 1600px;
+$max-width-tablet: 780px;
 $max-width-mobile: 375px;
 $content-font : Open Sans, sans-serif;
 $title-font : Raleway, sans-serif;
@@ -29,9 +30,15 @@ $susy: (
 );
 
 @mixin phone {
-    @media only screen and (max-width: 375px){
-      @content;
-    }
+  @media only screen and (max-width: 375px){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 376px) and (max-width: 780px){
+    @content;
+  }
 }
 
 @mixin standard-settings {
@@ -41,5 +48,10 @@ $susy: (
   font-weight: 300;
   @include phone {
     width: $max-width-mobile;
+    //width: 100%;
+  }
+  @include tablet {
+    //width:$max-width-tablet;
+    width: 100%;
   }
 }

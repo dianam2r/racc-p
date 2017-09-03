@@ -20,10 +20,14 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 9px 51px;
-    margin-top: 23px;
+    margin-top: 22px;
     @include align-self(auto);
   }
   @include phone {
+    @include flexbox;
+    margin-top: -30px;
+  }
+  @include tablet {
     @include flexbox;
     margin-top: -30px;
   }

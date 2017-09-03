@@ -1,7 +1,16 @@
 uuid: a98ba41f-86da-4d72-9b8f-7a1a73dfee32
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: slider_image_
-label: 'Slider Image Style'
-effects: {  }
+label: 'Slider Image Style Mobile'
+effects:
+  e5d3e56f-7bd9-41df-83b0-19b10f5de128:
+    uuid: e5d3e56f-7bd9-41df-83b0-19b10f5de128
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 375
+      height: 485

@@ -1,0 +1,78 @@
+
+  /* MODAL SEARCH POP UP */
+  /* The Modal (background) */
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index:5; /* Sit on top */
+      padding-top: 20%; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(255,255,255); /* Fallback color */
+      background-color: rgba(255,255,255,0.8); /* Black w/ opacity */
+      @include phone {
+        padding-top: 30%;
+      }
+      @include tablet {
+        padding-top: 25%;
+      }
+  }
+
+  /* Modal Content */
+  .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+  }
+
+  /* The Close Button */
+  .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+  }
+
+  input[type=text] {
+    padding: 30px 20px;
+    background-color: #152A39;
+    margin: 8px 0;
+    color: #fff;
+    border: 0;
+    width: 40vw;
+    font-size: 32px;
+    @include phone {
+      font-size: 25px;
+    }
+    @include tablet {
+      font-size: 28px;
+    }
+    &:focus {
+      background-color: #152A39;
+    }
+  }
+  #search {
+    background-color:red;
+    color:#fff;
+    border: 0;
+    padding: 13px 25px;
+    font-size: 25px;
+    @include phone {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 23px;
+    }
+  }

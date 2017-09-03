@@ -1,0 +1,16 @@
+uuid: 8af61f29-d4b8-42bb-a0bb-7d319d434453
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: slider_image_style_large
+label: 'Slider Image Style Large'
+effects:
+  78c11c79-64b0-4da8-8fcb-c5fbf4bfecb5:
+    uuid: 78c11c79-64b0-4da8-8fcb-c5fbf4bfecb5
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 1238

@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.storage.paragraph.field_body
     - field.storage.paragraph.field_image
-    - image.style.horizontal_side_block
     - paragraphs.paragraphs_type.content
+    - responsive_image.styles.side_block
   module:
-    - image
     - paragraphs
+    - responsive_image
     - text
 id: horizontal_side_block
 label: 'Horizontal Side Block'
@@ -113,9 +113,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: horizontal_side_block
+            responsive_image_style: side_block
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -243,7 +243,7 @@ display:
           admin_label: ''
           empty: false
           tokenize: false
-          content: "<div class=\"left-side\">\n              <ul class=\"center-content\">\n                <li class=\"first\" id=\"first\"><h2><a href=\"#\">I want to</a></h2></li>\n                <li class=\"second\" id=\"second\"><h2><a href=\"#\">Apply now</a></h2></li>\n                <li class=\"third\" id=\"third\"><h2><a href=\"#\">How to pay for college</a></h2></li>\n                <li class=\"fourth\" id=\"fourth\"><h2><a href=\"#\">Student life</a></h2></li>\n              </ul>\n            </div>\n"
+          content: "<div class=\"left-side\">\n              <ul class=\"center-content\">\n                <li class=\"first\" id=\"first\"><h2><a href=\"#\" onclick=\"openTab(event,'content0')\">I want to</a></h2></li>\n                <li class=\"second\" id=\"second\"><h2><a href=\"#\" onclick=\"openTab(event,'content1')\">Apply now</a></h2></li>\n                <li class=\"third\" id=\"third\"><h2><a href=\"#\" onclick=\"openTab(event,'content2')\">How to pay for college</a></h2></li>\n                <li class=\"fourth\" id=\"fourth\"><h2><a href=\"#\" onclick=\"openTab(event,'content3')\">Student life</a></h2></li>\n              </ul>\n            </div>\n"
           plugin_id: text_custom
       footer: {  }
       empty: {  }

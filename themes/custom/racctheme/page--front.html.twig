@@ -45,6 +45,20 @@
  * @ingroup themeable
  */
 #}
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+  <div align="center">
+    <input type="text" name="keyTerm" id="keyTerm" placeholder="Search RACC">
+    <br>
+    <button name="search" id="search">
+      Search
+    </button>
+    </div>
+  </div>
+</div>
+
 <header role="banner">
   <div class="row-header">
     <div class="start-line"><span></span></div>
@@ -60,17 +74,20 @@
       {% if page.secondary_menu %}
           {{ page.secondary_menu }}
       {% endif%}
+
       {% if page.primary_menu %}
         <div class="main_nav">
             {{ page.primary_menu }}
         </div>
       {% endif%}
+
     </div>
 
   </div>
 
   {{ page.header }}
 </header>
+
 <div class="enroll-now-mobile">
   <a href="#">Enroll Now</a>
 </div>

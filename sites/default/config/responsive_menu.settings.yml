@@ -1,0 +1,19 @@
+horizontal_menu: main
+horizontal_depth: 2
+off_canvas_menus: 'Main menu'
+horizontal_wrapping_element: div
+horizontal_breakpoint: mobile
+horizontal_media_query: 'all and (max-width: 375px)'
+include_css: true
+off_canvas_position: right
+off_canvas_theme: theme-dark
+horizontal_superfish: false
+horizontal_superfish_delay: 300
+horizontal_superfish_speed: 100
+horizontal_superfish_speed_out: 100
+horizontal_superfish_hoverintent: true
+hammerjs: false
+breakpoint_css_filepath: 'public://css'
+use_breakpoint: true
+_core:
+  default_config_hash: XSKdMLR7vuHUhp56C8BBAHX-WiKaMFwAFQsFelPjUVk

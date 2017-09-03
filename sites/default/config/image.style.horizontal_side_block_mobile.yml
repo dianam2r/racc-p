@@ -1,0 +1,16 @@
+uuid: c67d4873-c4d2-4143-9352-3d30effda296
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: horizontal_side_block_mobile
+label: 'Horizontal Side Block Mobile'
+effects:
+  315882a2-6742-4b59-b843-e17a94c1ce25:
+    uuid: 315882a2-6742-4b59-b843-e17a94c1ce25
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 180
