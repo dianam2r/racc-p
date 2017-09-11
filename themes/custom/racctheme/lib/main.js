@@ -303,10 +303,13 @@ function resizeSliderOverlay(){
  /* This is to adjust the date of the calendar events in a proper position */
  $(".calendar-date").each(function(){
    var calendarDate = $(this).text();
-   var dateEvent = calendarDate.split(" ",2);
+   calendarDate = $.trim(calendarDate);
+   var dateEvent = calendarDate.split(" ");
    $(this).html("");
-   $(this).append("<div class='month'>"+calendarDate.substr(4,5)+"</div>");
-   $(this).append("<div class='day'>"+calendarDate.substr(8,9)+"</div>");
+   $(this).append("<div class='month'>"+dateEvent[0]+"</div>");
+   $(this).append("<div class='day'>"+dateEvent[1]+"</div>");
+   /*$(this).append("<div class='month'>"+calendarDate.substr(4,5)+"</div>");
+   $(this).append("<div class='day'>"+calendarDate.substr(8,9)+"</div>");*/
  });
  /* End */
 
@@ -333,6 +336,6 @@ function resizeSliderOverlay(){
  $(".racc-video").html("");
  $(".racc-video").append("<a href='"+urlVideo+"' rel='videoRACC'><img src='./themes/custom/racctheme/img/play-button.png'></a>");
  $("a[rel^='videoRACC']").prettyPhoto();
- 
+
  /* End */
 });
