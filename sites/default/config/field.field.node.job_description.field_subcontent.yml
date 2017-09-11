@@ -14,7 +14,7 @@ bundle: job_description
 label: 'Job Details'
 description: 'Add some other requirements as needed'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

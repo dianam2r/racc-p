@@ -13,7 +13,7 @@ bundle: faculty_and_staff_directory
 label: Department
 description: 'The department where the staff member works'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

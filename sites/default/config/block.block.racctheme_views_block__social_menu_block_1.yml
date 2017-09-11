@@ -12,7 +12,7 @@ dependencies:
 id: racctheme_views_block__social_menu_block_1
 theme: racctheme
 region: content
-weight: 6
+weight: 1
 provider: null
 plugin: 'views_block:social_menu-block_1'
 settings:

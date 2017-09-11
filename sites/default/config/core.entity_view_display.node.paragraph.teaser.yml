@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.paragraph.body
+    - field.field.node.paragraph.field_content
     - node.type.paragraph
   module:
     - text
@@ -25,4 +26,6 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_content: true
+  langcode: true

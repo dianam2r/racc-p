@@ -5,7 +5,7 @@ dependencies:
   module:
     - focal_point
 name: featured_ne
-label: 'Featured News'
+label: 'Featured News Large'
 effects:
   3879dd0f-d3e3-4077-9531-f46d1558ec28:
     uuid: 3879dd0f-d3e3-4077-9531-f46d1558ec28

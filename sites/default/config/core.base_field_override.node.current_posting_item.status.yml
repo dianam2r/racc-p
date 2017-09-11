@@ -1,0 +1,22 @@
+uuid: c0fc26b9-510d-46ec-b1c9-19b2731dfacd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.current_posting_item
+id: node.current_posting_item.status
+field_name: status
+entity_type: node
+bundle: current_posting_item
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,16 @@
+uuid: 08754273-2905-44ef-9ca3-c7b70b574375
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.paragraph
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.paragraph
+target_entity_type_id: node
+target_bundle: paragraph
+default_langcode: site_default
+language_alterable: false

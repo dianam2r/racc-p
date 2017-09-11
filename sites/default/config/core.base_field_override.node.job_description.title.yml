@@ -1,0 +1,18 @@
+uuid: d396aa1c-88d2-46ca-8b46-ecede257c684
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job_description
+id: node.job_description.title
+field_name: title
+entity_type: node
+bundle: job_description
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

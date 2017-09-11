@@ -8,7 +8,9 @@
   @include flex-wrap(wrap);
   float: left;
   height: $alto;
-  width: 1163px;
+  //width: 1163px;
+  width: 70vw;
+  overflow: hidden;
   list-style: none;
   @include align-items(center);
   @include phone {
@@ -38,6 +40,7 @@
 }
 
 header {
+  width: 100%;
   .row-header {
     position: relative;
     z-index: 2;
@@ -74,10 +77,16 @@ header {
     text-transform: uppercase;
     height: auto;
     @include inline-flex;
+    .site-brand-center-content {
+      margin: 0 auto;
+    }
     .row-header-logo {
       @include inline-flex;
       @include align-items(center);
-      padding-left: 52px;
+      //padding-left: 52px;
+      /*padding-left: 10vw;
+      padding-right: 10vw;*/
+      width: 30vw;
       @include phone {
         //padding-left: 75px;
         padding-left: 0px;
@@ -87,16 +96,16 @@ header {
       @include tablet {
         padding-left: 0px;
         padding-top: 4px;
-        width: 130vw;
+        width: 390vw;
       }
       div {
         @include phone {
-          padding-left: 10vw;
-          margin-right: 1vw;
+          //padding-left: 10vw;
+          //margin-right: 1vw;
         }
         @include tablet {
-          padding-left: 10vw;
-          margin-right: 1vw;
+          //padding-left: 10vw;
+          //margin-right: 1vw;
         }
         img {
           @include align-self(auto);
@@ -114,8 +123,9 @@ header {
     .row-header-nav {
       font-family: $title-font;
       text-decoration: none;
-      width: susy-span(6);
-      padding-left: 212px;
+      //width: susy-span(6);
+      width: susy-span(10);
+      //padding-left: 212px;
       @include phone {
         //padding-left: 100px;
         padding-left: 0px;
@@ -195,6 +205,7 @@ header {
         margin-bottom: 0;
         position: absolute;
         z-index: 1;
+        width:100%;
         li {
           padding-left: 45px;
           padding-right: 1.8vw;
@@ -226,7 +237,8 @@ header {
         background-color: inherit;
       }
       .menu-container {
-        width: 1163px;
+        //width: 1163px;
+        width: 100%;
         margin-top: 46px;
         @include phone {
           display: none;
@@ -263,19 +275,19 @@ header {
           li {
             vertical-align: middle;
             height: auto;
-            padding-left: 20px;
+            padding-left: 25px;
             padding-right: 0.5px;
-            padding-top: 5px;
-            padding-bottom: 5px;
+            //padding-top: 5px;
+            //padding-bottom: 5px;
             &:hover {
               background-color: $color-gray-hover;
               border-color: $color-gray-hover;
             }
             a {
-              font-size: 12px;
-              font-weight: 300;
+              font-size: 10.5px;
+              font-weight: 500;
               &:hover {
-                font-weight: 500;
+                font-weight: 600;
               }
             }
           }
@@ -400,6 +412,11 @@ header {
       top: 66.2%;
       left: 7.8%;
     }
+    @include wide {
+      top:0%;
+      left:0%;
+      transform: translate(16%,-279%);
+    }
   }
 
   .slick-dots {
@@ -413,6 +430,9 @@ header {
     @include tablet {
       bottom: 14px;
       left: 35vw;
+    }
+    @include wide {
+      bottom: 44%;
     }
     li {
       border-top: 2px solid $color-white;
@@ -471,7 +491,7 @@ header {
   .slick-img-overlay {
     background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.7));
     width: 100%;
-    height: 1382px;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -485,5 +505,12 @@ header {
       height: 485px;
     }
   }
-
+  .fullwidth {
+    width: 100vw;
+    margin-left: auto;
+  	margin-right: auto;
+  	max-width: initial;
+  }
+  .slider {margin: 0;}
+  .slider .slide {width: 100%}
 }

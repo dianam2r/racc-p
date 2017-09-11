@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.slider.field_image
     - field.field.node.slider.field_slider_message
+    - field.field.node.slider.field_url
     - node.type.slider
   module:
     - image
@@ -37,4 +38,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_url: true
+  langcode: true

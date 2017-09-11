@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - image.style.slider_image_
+    - image.style.slider_image_style_extra_large
     - image.style.slider_image_style_large
     - image.style.slider_image_style_medium
   theme:
@@ -18,6 +19,7 @@ image_style_mappings:
     image_mapping:
       sizes: '(min-width:781px) 781px, 100vw'
       sizes_image_styles:
+        - slider_image_style_extra_large
         - slider_image_style_large
         - slider_image_style_medium
   -

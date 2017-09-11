@@ -1,0 +1,22 @@
+uuid: 215dc89e-9684-4ff0-9d88-2c9252c3bec9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.student_spotlight
+id: node.student_spotlight.status
+field_name: status
+entity_type: node
+bundle: student_spotlight
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

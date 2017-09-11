@@ -1,0 +1,20 @@
+uuid: 8af730b5-badf-42c0-b479-66f41da99a34
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.work_study_items
+  module:
+    - path
+id: node.work_study_items.path
+field_name: path
+entity_type: node
+bundle: work_study_items
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

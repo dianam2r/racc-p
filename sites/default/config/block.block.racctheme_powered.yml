@@ -11,7 +11,7 @@ _core:
 id: racctheme_powered
 theme: racctheme
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: system_powered_by_block
 settings:

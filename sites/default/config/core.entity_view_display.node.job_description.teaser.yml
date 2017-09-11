@@ -5,6 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.job_description.body
+    - field.field.node.job_description.field_announce_date
+    - field.field.node.job_description.field_application_status
+    - field.field.node.job_description.field_apply_by_date
+    - field.field.node.job_description.field_background_check
+    - field.field.node.job_description.field_position_type
+    - field.field.node.job_description.field_salary
+    - field.field.node.job_description.field_subcontent
+    - field.field.node.job_description.field_title
     - node.type.job_description
   module:
     - text
@@ -25,4 +33,13 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_announce_date: true
+  field_application_status: true
+  field_apply_by_date: true
+  field_background_check: true
+  field_position_type: true
+  field_salary: true
+  field_subcontent: true
+  field_title: true
+  langcode: true

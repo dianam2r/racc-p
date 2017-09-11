@@ -1,0 +1,20 @@
+uuid: bed622a0-41cf-4257-a87e-597563e030de
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faculty_and_staff_directory
+  module:
+    - path
+id: node.faculty_and_staff_directory.path
+field_name: path
+entity_type: node
+bundle: faculty_and_staff_directory
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

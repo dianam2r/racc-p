@@ -1,6 +1,6 @@
 uuid: 4c82851d-45be-4757-82f6-487fd1b40ea9
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.footer-d-login-center
@@ -10,8 +10,8 @@ dependencies:
     - racctheme
 id: racctheme_footerdlogincenter
 theme: racctheme
-region: content
-weight: 4
+region: footer
+weight: -8
 provider: null
 plugin: 'system_menu_block:footer-d-login-center'
 settings:

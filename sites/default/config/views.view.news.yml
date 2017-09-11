@@ -479,17 +479,17 @@ display:
         options:
           grouping: {  }
           uses_fields: true
-          columns: 3
-          automatic_width: true
+          columns: 2
+          automatic_width: false
           alignment: horizontal
           col_class_default: true
-          col_class_custom: ''
+          col_class_custom: news-item1
           row_class_default: true
-          row_class_custom: ''
+          row_class_custom: news-row-item1
       row:
         type: fields
         options:
-          default_field_elements: true
+          default_field_elements: false
           inline:
             field_image: field_image
             body: body
@@ -601,9 +601,9 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
+          element_wrapper_type: div
+          element_wrapper_class: news-img-overlay
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -661,13 +661,13 @@ display:
             preserve_tags: ''
             html: false
           element_type: h2
-          element_class: ''
+          element_class: news-short-title
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -750,7 +750,7 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-      use_more: true
+      use_more: false
       use_more_always: true
       use_more_text: more
       pager:

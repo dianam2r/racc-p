@@ -5,6 +5,13 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.faculty_and_staff_directory.body
+    - field.field.node.faculty_and_staff_directory.field_department
+    - field.field.node.faculty_and_staff_directory.field_email
+    - field.field.node.faculty_and_staff_directory.field_mailbox
+    - field.field.node.faculty_and_staff_directory.field_name
+    - field.field.node.faculty_and_staff_directory.field_office_phone
+    - field.field.node.faculty_and_staff_directory.field_position
+    - field.field.node.faculty_and_staff_directory.field_room
     - node.type.faculty_and_staff_directory
   module:
     - text
@@ -25,4 +32,12 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_department: true
+  field_email: true
+  field_mailbox: true
+  field_name: true
+  field_office_phone: true
+  field_position: true
+  field_room: true
+  langcode: true

@@ -12,7 +12,7 @@ bundle: faculty_and_staff_directory
 label: Phone
 description: ''
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

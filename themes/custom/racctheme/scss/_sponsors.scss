@@ -1,0 +1,134 @@
+
+/*-------------------------------------------*/
+/* SPONSORS SECTION */
+/*-------------------------------------------*/
+
+.sponsors {
+  background-color : $color-bg-sponsors;
+  color: $color-white;
+  width: susy-span(12);
+  height: 317px;
+  @include inline-flex;
+  @include flex-wrap(wrap);
+  @include align-items(center);
+  @include phone {
+    height: 652px;
+    @include flexbox;
+    @include flex-flow(column);
+  }
+  .views-view-grid {
+    width: 100vw;
+  }
+  .brand-row {
+    @include inline-flex;
+    width: 100%;
+    @include phone {
+      @include flexbox;
+      @include flex-flow(column);
+    }
+  }
+  .brand-col {
+    width: susy-span(4);
+    @include phone {
+      width: 100%;
+      margin-top: 31px;
+    }
+    .brand-logo {
+      padding: 0px 221px;
+      @include phone {
+        padding: 0px 149px;
+      }
+    }
+    .brand-name {
+      p {
+        text-align: center;
+      }
+    }
+    &:first-of-type{
+      .brand-logo {
+        padding: 0px 172px;
+        @include phone {
+          padding: 30px 133px;
+        }
+      }
+    }
+  }
+}
+/*  .miller-center {
+    width: susy-span(4);
+    padding-right: 102px;
+    padding-bottom: 3px;
+    @include phone {
+      width: susy-span(10);
+      padding-top: 55px;
+      padding-right: 114px;
+      padding-bottom: 10px;
+    }
+    img {
+      position:relative;
+      float: right;
+      @include phone {
+        width: 83px;
+        height: auto;
+      }
+    }
+  }
+  .schmidt-training {
+    width: susy-span(4);
+    padding-left: 59px;
+    padding-bottom: 12px;
+    @include phone {
+      width: susy-span(10);
+      padding-left: 0px;
+      padding-top: 49px;
+    }
+    img {
+      padding-bottom: 9px;
+      padding-left: 190px;
+      @include phone {
+        padding-bottom: 11px;
+        padding-left: 120px;
+      }
+    }
+    p {
+      font-size: 19px;
+      text-align: center;
+      letter-spacing: 1.5px;
+      word-spacing: 0.5px;
+      padding-left: 10px;
+    }
+  }
+  .give-to-racc {
+    width: susy-span(4);
+    padding-right: 116px;
+    padding-bottom: 13px;
+    @include phone {
+      width: susy-span(10);
+      padding-right: 0px;
+      padding-top: 46px;
+      padding-bottom: 13px;
+    }
+    img {
+      padding-bottom: 9px;
+      padding-left: 170px;
+      @include phone {
+        height: 78px;
+        width: auto;
+        padding-left: 127px;
+        padding-bottom: 0px;
+      }
+    }
+    p {
+      font-size: 19px;
+      text-align: center;
+      letter-spacing: 1.5px;
+      word-spacing: 2px;
+      @include phone {
+        padding-top: 10px;
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}*/

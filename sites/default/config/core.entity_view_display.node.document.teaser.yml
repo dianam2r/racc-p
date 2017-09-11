@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.document.body
+    - field.field.node.document.field_photo
     - node.type.document
   module:
     - text
@@ -25,4 +26,6 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_photo: true
+  langcode: true

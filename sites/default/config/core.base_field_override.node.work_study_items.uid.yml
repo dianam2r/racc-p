@@ -1,0 +1,20 @@
+uuid: d3d24930-7dd4-4455-8616-e9845c33bf83
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.work_study_items
+id: node.work_study_items.uid
+field_name: uid
+entity_type: node
+bundle: work_study_items
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

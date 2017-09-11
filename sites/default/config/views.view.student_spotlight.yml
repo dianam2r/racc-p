@@ -63,7 +63,7 @@ display:
         options:
           grouping: {  }
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           override: true
           sticky: false
           caption: ''
@@ -400,9 +400,9 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
+          element_wrapper_type: div
+          element_wrapper_class: spotlight
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -464,9 +464,9 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
+          element_wrapper_type: div
+          element_wrapper_class: spotlight-content-title
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -529,9 +529,9 @@ display:
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
+          element_wrapper_type: div
+          element_wrapper_class: spotlight-content-body
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -552,8 +552,23 @@ display:
           plugin_id: field
       defaults:
         fields: false
+        style: false
+        row: false
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

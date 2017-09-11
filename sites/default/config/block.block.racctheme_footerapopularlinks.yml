@@ -1,6 +1,6 @@
 uuid: 613f48b0-ed08-4233-80ad-437806512c68
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.footer-a-popular-links
@@ -10,8 +10,8 @@ dependencies:
     - racctheme
 id: racctheme_footerapopularlinks
 theme: racctheme
-region: content
-weight: 2
+region: footer
+weight: -11
 provider: null
 plugin: 'system_menu_block:footer-a-popular-links'
 settings:

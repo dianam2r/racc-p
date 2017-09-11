@@ -1,0 +1,16 @@
+uuid: 6a0f9682-07fb-483d-9822-2f8c1f4d94f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: featured_news_
+label: 'Featured News Mobile'
+effects:
+  c15544f7-c35c-44c9-8f36-24d8caedfb55:
+    uuid: c15544f7-c35c-44c9-8f36-24d8caedfb55
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 327
+      height: 324

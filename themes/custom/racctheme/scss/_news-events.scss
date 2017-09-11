@@ -1,0 +1,113 @@
+
+
+@include phone {
+    .content-spacing{
+       margin-top: 84%;
+    }
+}
+@include tablet {
+    .content-spacing{
+       margin-top: 84%;
+    }
+}
+@include wide {
+    .content-spacing{
+       margin-top: -44%;
+    }
+}
+
+/* This is common between Features News and Upcoming Events */
+
+.heading-row {
+  //padding-left: 39px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  @include inline-flex;
+  @include flex-wrap(wrap);
+  @include align-items(center);
+  h2, h3, a {
+    text-transform: uppercase;
+    color: $color-gray-title;
+  }
+  @include phone {
+    padding-left: 15px;
+  }
+  @include tablet {
+    padding-left: 15px;
+  }
+  @include wide {
+    padding-left: 0px;
+  }
+  .field-item.title-row {
+    padding-left: 39px;
+    padding-bottom: 32px;
+    width: 90vw;
+    @include phone {
+      padding-bottom: 31px;
+      padding-left: 18px;
+      width: 65vw;
+    }
+    @include tablet {
+      padding-bottom: 31px;
+      padding-left: 18px;
+      width: 65vw;
+    }
+    @include wide {
+      padding-bottom: 32px;
+      padding-left: 39px;
+      width: 80vw;
+    }
+    h2 {
+      @include flex-grow(1);
+      font-size: 35px;
+      font-weight: 300;
+      @include phone {
+        padding-top: 0px;
+        padding-left: 0px;
+        font-size: 23px;
+        word-spacing: 2px;
+      }
+      @include tablet {
+        padding-top: 0px;
+        padding-left: 0px;
+        font-size: 23px;
+        word-spacing: 2px;
+      }
+      @include wide {
+        padding-top: 0px;
+        padding-left: 0px;
+        font-size: 23px;
+        word-spacing: 2px;
+      }
+    }
+  }
+  .show-more {
+    width: auto;
+    margin-bottom: 25px;
+    h3 {
+      a {
+        font-family: $content-font;
+        font-size: 16px;
+        font-weight: 300;
+        @include phone {
+          margin-left: 3em;
+          padding-top: 8px;
+          padding-left: 2px;
+        }
+        @include tablet {
+          margin-left: 3em;
+          padding-top: 8px;
+          padding-left: 2px;
+        }
+        @include wide {
+          margin-left: 3em;
+          padding-top: 8px;
+          padding-left: 2px;
+        }
+      }
+    }
+  }
+}
+
+/* End common parts */

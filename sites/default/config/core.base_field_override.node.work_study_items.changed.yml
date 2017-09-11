@@ -1,0 +1,18 @@
+uuid: 7384a455-76b3-4d80-8d4d-30173fd8a303
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.work_study_items
+id: node.work_study_items.changed
+field_name: changed
+entity_type: node
+bundle: work_study_items
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

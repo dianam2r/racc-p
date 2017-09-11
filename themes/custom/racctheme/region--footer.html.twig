@@ -1,0 +1,59 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{% if content %}
+  <div{{ attributes }} class="footer-content">
+    <div class="footer-menu-mobile">
+      <ul>
+        <li><a href="#">Apply</a></li>
+        <li><a href="#">Visit RACC</a></li>
+        <li><a href="#">Donate</a></li>
+      </ul>
+    </div>
+    <div class="sitemap">
+      <div class="hiperlinks">
+          {{ content }}
+      </div>
+      <hr>
+          <div class="social">
+            <div class="social-row1">
+            <div class="social-media-facebook"><a href="https://www.facebook.com/ReadingAreaCommunityCollege"></a></div>
+            <div class="social-media-twitter"><a href="https://twitter.com/racc_edu"></a></div>
+            <div class="social-media-youtube"><a href="https://www.youtube.com/user/RACCvideopage"></a></div>
+            </div>
+
+            <div class="social-row2">
+            <div class="social-media-linkedin"><a href="https://www.linkedin.com/company/reading-area-community-college"></a></div>
+            <div class="social-media-snapchat"><a href="https://www.snapchat.com/add/racc_edu"></a></div>
+            <div class="social-media-instagram"><a href="https://www.instagram.com/RACC_edu/"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="racc-white">
+            <img src="themes/custom/racctheme/img/footer_logo.png" alt="Logo RACC White">
+          </div>
+          <div class="disclaimer">
+            <p>Copyright © 2016 Reading Area Community College <br>10 South Second Street, Reading, PA 19603 · 610-372-4721</p>
+            <p>Accredited by the Middle States Commission on Higher Education <br>3624 Market Street, Philadelphia, PA 19104 · 215-662-5606</p>
+          </div>
+          <div class="disclaimer-mobile">
+            <p>READING AREA COMMUNITY COLLEGE<br>10 S 2nd St.<br>Reading PA 19603<br>610-372-4721</p>
+            <p>Copyright &copy; 2016<br>RACC</p>
+          </div>
+        </div>
+    </div>
+
+  </div>
+{% endif %}

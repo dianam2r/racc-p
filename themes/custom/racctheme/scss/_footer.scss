@@ -1,0 +1,256 @@
+
+/*-------------------------------------------*/
+/* FOOTER SECTION */
+/*-------------------------------------------*/
+.menu>li>a {
+  padding: 1.4rem 1.3rem;
+}
+
+footer {
+  .footer-content {
+    background-color: $color-bg-footer;
+    color: $color-white;
+    font-family: $content-font;
+    width: susy-span(12);
+    height: 500px;
+    padding-top: 81px;
+    @include inline-flex;
+    @include phone {
+      @include flexbox;
+      @include flex-flow(column);
+      height: 803px;
+      padding-top: 71px;
+    }
+    .footer-menu-mobile {
+      display: none;
+      @include phone {
+        display: block;
+        width: susy-span(12);
+        padding-top: 2px;
+        @include align-content(center);
+        li {
+          list-style: none;
+          font-size: 15px;
+          padding-left: 0px;
+          margin-bottom: 36px;
+          a {
+            background-color: $color-black;
+            color: $color-white;
+            font-family: $title-font;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            padding: 10px 101px;
+          }
+          &:first-child a{
+            padding: 10px 126px;
+          }
+          &:last-child a{
+            padding: 10px 116px;
+          }
+        }
+      }
+    }
+    .sitemap{
+      width: susy-span(7);
+      margin-left: 13%;
+      margin-right: 5%;
+      @include flexbox;
+      @include flex-direction(column);
+      @include phone {
+        width: susy-span(12);
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 98%;
+      }
+      .hiperlinks {
+        @include inline-flex;
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        border-bottom: 1px solid;
+        @include phone {
+          display: none;
+        }
+        .menu {
+          li {
+            padding-bottom: 22px;
+            a {
+              color: $color-red;
+              font-weight: 600;
+            }
+            ul {
+              li {
+                list-style: none;
+                padding-bottom: 11px;
+                a {
+                  color: $color-white;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+      /*  .popular-links,
+        .contact-information,
+        .policies,
+        .login-center {
+          h3 {
+            color: $color-red;
+            padding-bottom: 22px;
+          }
+          li {
+            list-style: none;
+            padding-bottom: 11px;
+            font-size: 11.3px;
+            a {
+              color: $color-white;
+              text-decoration: none;
+            }
+          }
+        }
+        .popular-links {
+          width: 40%;
+          padding-left: 3px;
+        }
+        .contact-information {
+          width: 30%;
+          padding-left: 11px;
+        }
+        .policies {
+          width: 40%;
+          padding-left: 56px;
+        }
+        .login-center {
+          width: 20%;
+          padding-left: 11px;
+        }*/
+      }
+      hr {
+        margin-top: 29px;
+        margin-bottom: 20px;
+        height: 1px;
+        border: 0;
+        background-color: $color-white;
+        @include phone {
+          display: none;
+        }
+      }
+      .social {
+        .social-row1 {
+          .social-media-facebook {
+            a {
+              background-color: $color-bg-footer;
+              color: $color-white;
+              &::after{
+                content: '\f09a';
+              }
+            }
+          }
+          .social-media-twitter {
+            a {
+              background-color: $color-bg-footer;
+              color: $color-white;
+              &::after{
+                content: '\f099';
+              }
+            }
+          }
+          .social-media-youtube {
+            a {
+              background-color: $color-bg-footer;
+              color: $color-white;
+              &::after{
+                content: '\f167';
+              }
+            }
+          }
+        }
+        .social-row2 {
+          .social-media-linkedin {
+            a {
+              background-color: $color-bg-footer;
+              color: $color-white;
+              &::after{
+                content: '\f0e1';
+              }
+            }
+          }
+          .social-media-snapchat {
+            a {
+              background-color: $color-bg-footer;
+              color: $color-white;
+              &::after{
+                content: '\f2ac';
+              }
+            }
+          }
+          .social-media-instagram {
+            a {
+              background-color: $color-bg-footer;
+              color: $color-white;
+              &::after{
+                content: '\f16d';
+              }
+            }
+          }
+        }
+      }
+    }
+    .copyright {
+      width: susy-span(5);
+      @include phone {
+        width: susy-span(12);
+        margin-top: -400px;
+      }
+      .racc-white {
+        padding-left: 52px;
+        padding-bottom: 45px;
+        @include phone {
+          padding-left: 110px;
+          padding-top: 21px;
+          padding-bottom: 25px;
+        }
+        img {
+          width: 280px;
+          height: 139px;
+          @include phone {
+            width: 158px;
+            height: 76px;
+          }
+        }
+      }
+      .disclaimer {
+        @include phone {
+          display: none;
+        }
+        p {
+          font-family: $title-font;
+          font-size: 11px;
+          line-height: 2;
+          padding-left: 52px;
+          padding-bottom: 25px;
+          letter-spacing: 0.5px;
+        }
+      }
+      .disclaimer-mobile {
+        display: none;
+        @include phone {
+          display: block;
+          p {
+            font-family: $title-font;
+            font-size: 16.5px;
+            line-height: 1.4;
+            padding-left: 79px;
+            padding-right: 79px;
+            padding-bottom: 22px;
+            letter-spacing: 0.5px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

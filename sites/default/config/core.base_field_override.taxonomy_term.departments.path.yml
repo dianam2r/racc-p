@@ -1,0 +1,20 @@
+uuid: 123aa735-9ce3-429c-ae4e-fb98588807c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.departments
+  module:
+    - path
+id: taxonomy_term.departments.path
+field_name: path
+entity_type: taxonomy_term
+bundle: departments
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

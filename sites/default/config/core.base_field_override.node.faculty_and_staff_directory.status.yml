@@ -1,0 +1,22 @@
+uuid: b37d795b-157c-476c-8d6b-de11e31736db
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faculty_and_staff_directory
+id: node.faculty_and_staff_directory.status
+field_name: status
+entity_type: node
+bundle: faculty_and_staff_directory
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

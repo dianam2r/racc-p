@@ -1,0 +1,16 @@
+uuid: e66a5110-f5af-4ddd-ade6-452863a87581
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slider
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.slider
+target_entity_type_id: node
+target_bundle: slider
+default_langcode: site_default
+language_alterable: false

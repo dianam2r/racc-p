@@ -1,0 +1,24 @@
+uuid: 322f02fb-f722-48fc-891a-f34156a7959d
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: slider_image_style_extra_large
+label: 'Slider Image Style Extra Large'
+effects:
+  c9c7c351-4ded-425e-a32d-81b4c3f1fddb:
+    uuid: c9c7c351-4ded-425e-a32d-81b4c3f1fddb
+    id: image_scale
+    weight: -9
+    data:
+      width: 1600
+      height: 1238
+      upscale: true
+  b0160029-4745-46bb-8dc2-11ec42d427a3:
+    uuid: b0160029-4745-46bb-8dc2-11ec42d427a3
+    id: focal_point_scale_and_crop
+    weight: -10
+    data:
+      width: 1600
+      height: 1238

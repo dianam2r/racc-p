@@ -1,0 +1,18 @@
+uuid: 5bb419f6-feea-4a69-9870-33c1d164d9c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.work_study_items
+id: node.work_study_items.title
+field_name: title
+entity_type: node
+bundle: work_study_items
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

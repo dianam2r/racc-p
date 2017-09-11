@@ -1,0 +1,255 @@
+
+/*-------------------------------------------*/
+/* ABOUT RACC COLLEGE SECTION */
+/*-------------------------------------------*/
+
+#about-racc-col0.racc-info-col{
+    width: 23.33%;
+    @include phone {
+      width: 100vw;
+    }
+}
+#about-racc-col1.racc-info-col {
+    width: 59.33%;
+    @include phone {
+      width: 100vw;
+    }
+}
+
+.about-racc-college {
+  //height: 1320px;
+  height: auto;
+  .about-racc-college-background{
+    background-image: url(../img/racc-college.png);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position-y: -253px;
+    height: 742px;
+    @include phone {
+      background-image: none;
+      display: none;
+    }
+  }
+  .about-racc-content {
+    padding-top: 0px;
+    margin-top: -136px;
+    @include phone {
+      margin-top: 0px;
+    }
+    //transform: translate(0px, -147px);
+    //-webkit-transform: translate(0px, -147px);
+    //-ms-transform: translate(0px, -147px);
+  }
+  .racc-info-row {
+    @include inline-flex;
+    @include phone {
+      @include flexbox;
+      @include flex-flow(column-reverse);
+    }
+  }
+  #about-racc-col0 {
+    background: $color-red;
+    h1 {
+      padding-top: 116px;
+      padding-left: 40px;
+      padding-right: 58px;
+      padding-bottom: 25px;
+      font-weight: 100;
+      text-transform: uppercase;
+      font-size: 35px;
+      color: $color-white;
+      @include phone {
+        font-size: 24px;
+        padding-bottom: 18px;
+        padding-top: 46px;
+        padding-left: 19px;
+      }
+    }
+    p {
+      font-size: 17.7px;
+      font-weight: 400;
+      padding-left: 42px;
+      padding-right: 42px;
+      line-height: 1.7;
+      color: $color-white;
+      @include phone {
+        font-size: 13px;
+        padding-left: 18px;
+        line-height: 1.5;
+        letter-spacing: 0.8px;
+      }
+    }
+    .racc-video {
+      display: none;
+    }
+  }
+
+  #about-racc-col1 {
+    .racc-video {
+        height: 531px;
+        background-image: url(../img/img5.png);
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-position-x: -35px;
+        background-position-y: -14px;
+        @include phone {
+          height: 233px;
+          //width: susy-span(11.8);
+          width: 100vw;
+          padding-left: 25px;
+          padding-right: 10px;
+          padding-top: 2px;
+        }
+      a {
+        img {
+          padding: 192px 400px;
+          @include phone {
+            padding: 42px 105px;
+          }
+        }
+      }
+    }
+    h1 {
+      color: $color-gray-two;
+      font-weight: 100;
+      font-size: 35px;
+      text-transform: uppercase;
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-bottom: 14px;
+      word-spacing: 1px;
+      @include phone {
+        font-size: 24px;
+      }
+    }
+    p {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.8;
+      padding-left: 30px;
+      @include phone {
+        font-size: 14px;
+        line-height: 1.7;
+        padding-left: 37px;
+        padding-right: 31px;
+      }
+    }
+  }
+}
+
+/*
+  .about-racc-content {
+    padding-top: 0px;
+    margin-top: -136px;
+    transform: translate(0px, -147px);
+    -webkit-transform: translate(0px, -147px);
+    -ms-transform: translate(0px, -147px);
+    width: susy-span(10.32);
+    @include inline-flex;
+    @include phone {
+      padding-top: 282px;
+      width: susy-span(12);
+      @include flexbox;
+      @include flex-flow(column-reverse);
+    }
+    .racc-info {
+      width: 139%;
+      background-color: $color-red;
+      color: $color-white;
+      padding-top: 116px;
+      padding-left: 40px;
+      padding-right: 58px;
+      @include phone {
+        width: susy-span(12);
+        padding-top: 28px;
+        padding-left: 27px;
+        padding-right: 19px;
+        padding-bottom: 45px;
+      }
+      h2 {
+        font-family: $title-font;
+        font-weight: 100;
+        text-transform: uppercase;
+        font-size: 35px;
+        padding-bottom: 25px;
+        @include phone {
+          font-size: 24px;
+          padding-bottom: 18px;
+        }
+      }
+      p {
+        font-size: 17.7px;
+        font-weight: 400;
+        padding-left: 4px;
+        line-height: 1.7;
+        @include phone {
+          font-size: 13px;
+          padding-left: 0px;
+          line-height: 1.5;
+          letter-spacing: 0.8px;
+        }
+      }
+    }
+    .racc-video {
+      .top-section {
+        height: 531px;
+        background-image: url(../img/img5.png);
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        background-position-x: -20px;
+        background-position-y: 3px;
+        @include phone {
+          height: 233px;
+          width: susy-span(11.8);
+          padding-left: 25px;
+          padding-right: 10px;
+          padding-top: 2px;
+        }
+        img {
+          padding: 208px 400px;
+          @include phone {
+            width: 87px;
+            height: 87px;
+            padding: 0px 0px;
+            margin-top: 82px;
+            margin-left: 123px;
+          }
+        }
+      }
+      .bottom-section {
+        padding-top: 50px;
+        padding-bottom: 45px;
+        padding-left: 50px;
+        padding-right: 44px;
+        @include phone {
+          padding-top: 23px;
+          padding-bottom: 45px;
+          padding-left: 26px;
+          padding-right: 44px;
+        }
+        h2 {
+          color: $color-gray-two;
+          font-weight: 100;
+          font-size: 35px;
+          text-transform: uppercase;
+          padding-bottom: 14px;
+          word-spacing: 1px;
+          @include phone {
+            font-size: 24px;
+          }
+        }
+        p {
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 1.8;
+          padding-left: 5px;
+          @include phone {
+            font-size: 14px;
+            line-height: 1.7;
+            padding-left: 2px;
+          }
+        }
+      }
+    }
+  }
+}*/

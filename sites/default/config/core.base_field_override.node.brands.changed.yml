@@ -1,0 +1,18 @@
+uuid: 9930b8bb-335d-4a38-b3a8-9af993d2b329
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.brands
+id: node.brands.changed
+field_name: changed
+entity_type: node
+bundle: brands
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

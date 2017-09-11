@@ -1,0 +1,20 @@
+uuid: ac0868e8-50a5-48df-ac20-0455a9a65fff
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.current_posting_item
+  module:
+    - path
+id: node.current_posting_item.path
+field_name: path
+entity_type: node
+bundle: current_posting_item
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

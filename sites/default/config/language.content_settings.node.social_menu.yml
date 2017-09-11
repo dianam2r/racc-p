@@ -1,0 +1,16 @@
+uuid: f4396594-d385-47b0-a2f6-92bc030d4fa1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_menu
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.social_menu
+target_entity_type_id: node
+target_bundle: social_menu
+default_langcode: site_default
+language_alterable: false

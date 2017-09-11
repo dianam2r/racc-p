@@ -1,0 +1,20 @@
+uuid: 2dba09b2-4a47-4eb6-9ca5-20e18676f28a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.social_menu
+  module:
+    - path
+id: node.social_menu.path
+field_name: path
+entity_type: node
+bundle: social_menu
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

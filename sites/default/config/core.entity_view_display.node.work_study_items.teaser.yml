@@ -5,6 +5,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.work_study_items.body
+    - field.field.node.work_study_items.field_contact
+    - field.field.node.work_study_items.field_department
+    - field.field.node.work_study_items.field_dept_location
+    - field.field.node.work_study_items.field_email
+    - field.field.node.work_study_items.field_hours
+    - field.field.node.work_study_items.field_job_title
+    - field.field.node.work_study_items.field_office_phone
+    - field.field.node.work_study_items.field_pay_rate
+    - field.field.node.work_study_items.field_posted_date
+    - field.field.node.work_study_items.field_term
     - node.type.work_study_items
   module:
     - text
@@ -25,4 +35,15 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_contact: true
+  field_department: true
+  field_dept_location: true
+  field_email: true
+  field_hours: true
+  field_job_title: true
+  field_office_phone: true
+  field_pay_rate: true
+  field_posted_date: true
+  field_term: true
+  langcode: true

@@ -39,3 +39,4 @@ content:
     third_party_settings: {  }
 hidden:
   field_url: true
+  langcode: true

@@ -1,0 +1,20 @@
+uuid: a939cd51-98a6-4064-a0ce-4c0df0f0ac66
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.brands
+  module:
+    - path
+id: node.brands.path
+field_name: path
+entity_type: node
+bundle: brands
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

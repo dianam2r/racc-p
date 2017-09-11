@@ -3,15 +3,27 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.large
-    - image.style.medium
+    - image.style.featured_ne
+    - image.style.featured_news_
+  theme:
+    - racctheme
 id: featured_news_image_size
 label: 'Featured News Image Size'
 image_style_mappings:
   -
-    breakpoint_id: responsive_image.viewport_sizing
+    breakpoint_id: racctheme.wide
     multiplier: 1x
     image_mapping_type: image_style
-    image_mapping: large
-breakpoint_group: responsive_image
-fallback_image_style: medium
+    image_mapping: featured_ne
+  -
+    breakpoint_id: racctheme.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: featured_news_
+  -
+    breakpoint_id: racctheme.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: featured_news_
+breakpoint_group: racctheme
+fallback_image_style: featured_news_

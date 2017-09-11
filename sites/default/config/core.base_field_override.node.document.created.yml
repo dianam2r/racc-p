@@ -1,0 +1,18 @@
+uuid: 38c0b8da-c208-4c65-b545-5ae1493a3908
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.document
+id: node.document.created
+field_name: created
+entity_type: node
+bundle: document
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

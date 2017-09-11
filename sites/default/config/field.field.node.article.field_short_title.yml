@@ -12,7 +12,7 @@ bundle: article
 label: 'Short Title'
 description: 'This is a short title to display in the home page'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

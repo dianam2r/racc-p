@@ -1,6 +1,6 @@
 uuid: d3063f9b-25bc-4df3-9af2-e0d38de52cf6
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.footer-c-policies
@@ -10,8 +10,8 @@ dependencies:
     - racctheme
 id: racctheme_footercpolicies
 theme: racctheme
-region: content
-weight: -7
+region: footer
+weight: -9
 provider: null
 plugin: 'system_menu_block:footer-c-policies'
 settings:

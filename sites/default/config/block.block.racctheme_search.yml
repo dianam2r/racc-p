@@ -12,7 +12,7 @@ _core:
 id: racctheme_search
 theme: racctheme
 region: content
-weight: -1
+weight: -2
 provider: null
 plugin: search_form_block
 settings:

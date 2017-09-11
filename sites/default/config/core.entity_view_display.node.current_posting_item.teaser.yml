@@ -5,6 +5,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.current_posting_item.body
+    - field.field.node.current_posting_item.field_bid_bond
+    - field.field.node.current_posting_item.field_bid_fee
+    - field.field.node.current_posting_item.field_department
+    - field.field.node.current_posting_item.field_description
+    - field.field.node.current_posting_item.field_due_date
+    - field.field.node.current_posting_item.field_file_attachment
+    - field.field.node.current_posting_item.field_performance_bond
+    - field.field.node.current_posting_item.field_post_date
+    - field.field.node.current_posting_item.field_proposal_number
+    - field.field.node.current_posting_item.field_refund
     - node.type.current_posting_item
   module:
     - text
@@ -25,4 +35,15 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_bid_bond: true
+  field_bid_fee: true
+  field_department: true
+  field_description: true
+  field_due_date: true
+  field_file_attachment: true
+  field_performance_bond: true
+  field_post_date: true
+  field_proposal_number: true
+  field_refund: true
+  langcode: true

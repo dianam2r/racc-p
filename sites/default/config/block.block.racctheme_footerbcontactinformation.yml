@@ -1,6 +1,6 @@
 uuid: 2d08d37b-b5e0-4654-bbf9-b466b21a9842
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.footer-b-contact-informatio
@@ -10,8 +10,8 @@ dependencies:
     - racctheme
 id: racctheme_footerbcontactinformation
 theme: racctheme
-region: content
-weight: 3
+region: footer
+weight: -10
 provider: null
 plugin: 'system_menu_block:footer-b-contact-informatio'
 settings:

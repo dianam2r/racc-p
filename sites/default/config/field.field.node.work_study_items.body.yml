@@ -14,7 +14,7 @@ bundle: work_study_items
 label: Description
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

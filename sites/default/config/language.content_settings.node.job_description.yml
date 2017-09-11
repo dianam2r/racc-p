@@ -1,0 +1,16 @@
+uuid: 26ccf53f-1479-48d1-839e-cbf88828794c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.job_description
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.job_description
+target_entity_type_id: node
+target_bundle: job_description
+default_langcode: site_default
+language_alterable: false

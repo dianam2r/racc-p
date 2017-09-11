@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.brands.body
+    - field.field.node.brands.field_image
+    - field.field.node.brands.field_url
     - node.type.brands
   module:
     - text
@@ -25,4 +27,7 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_image: true
+  field_url: true
+  langcode: true

@@ -1,0 +1,16 @@
+uuid: 1f2e1aac-4a3b-4b5d-a268-0023aec4a46e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.student_spotlight
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.student_spotlight
+target_entity_type_id: node
+target_bundle: student_spotlight
+default_langcode: site_default
+language_alterable: false

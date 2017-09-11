@@ -85,7 +85,7 @@ display:
           title: ''
           link: ''
           class: ''
-          id: ''
+          id: slider-header
           override: true
           overridables:
             arrows: arrows

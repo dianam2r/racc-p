@@ -67,3 +67,4 @@ content:
 hidden:
   field_short_title: true
   field_tags: true
+  langcode: true

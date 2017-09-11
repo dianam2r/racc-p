@@ -1,0 +1,22 @@
+uuid: a7c9d08f-ef7a-4883-9a57-cf471d30c654
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.slider
+id: node.slider.status
+field_name: status
+entity_type: node
+bundle: slider
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

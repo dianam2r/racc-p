@@ -1,0 +1,20 @@
+uuid: 8e37bd4c-43c8-4185-bcfa-94cad77beb94
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.student_spotlight
+id: node.student_spotlight.uid
+field_name: uid
+entity_type: node
+bundle: student_spotlight
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

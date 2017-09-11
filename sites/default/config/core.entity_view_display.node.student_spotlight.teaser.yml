@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.student_spotlight.body
+    - field.field.node.student_spotlight.field_image
     - node.type.student_spotlight
   module:
     - text
@@ -25,4 +26,6 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_image: true
+  langcode: true

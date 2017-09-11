@@ -11,7 +11,7 @@ dependencies:
 id: racctheme_news
 theme: racctheme
 region: content
-weight: -5
+weight: -6
 provider: null
 plugin: 'system_menu_block:news'
 settings:

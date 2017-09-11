@@ -1,8 +1,23 @@
 @import 'susy';
 @import 'basic';
-
+/* header */
 @import 'search-box';
 @import 'header';
+@import 'language-switcher';
 @import 'enroll-now-mobile';
-
+/* horizontal side block */
 @import 'side-block';
+/* featured news and events */
+@import 'news-events';
+@import 'featured-news';
+@import 'upcoming-events';
+/* get connected - hard coded - */
+@import 'get-connected';
+/* need more info form */
+@import 'need-more-info';
+/* about racc */
+@import 'about-racc-college';
+/* brands */
+@import 'sponsors';
+/* footer */
+@import 'footer';

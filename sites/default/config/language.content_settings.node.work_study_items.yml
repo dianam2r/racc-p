@@ -1,0 +1,16 @@
+uuid: 6f5ef370-54d8-441a-8977-633901e4c19d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.work_study_items
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.work_study_items
+target_entity_type_id: node
+target_bundle: work_study_items
+default_langcode: site_default
+language_alterable: false

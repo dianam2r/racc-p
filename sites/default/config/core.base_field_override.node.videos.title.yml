@@ -1,0 +1,18 @@
+uuid: 86a7321f-a46a-40b6-aa1d-142d861ebb27
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.videos
+id: node.videos.title
+field_name: title
+entity_type: node
+bundle: videos
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

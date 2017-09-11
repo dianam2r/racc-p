@@ -19,6 +19,7 @@ $color-gray-three : #bbbbbf;
 $color-gray-four : #cfcfd2;
 $color-gray-five : #595859;
 $color-gray-title : #6c798e;
+$color-bg-spotlight: #87888e;
 $color-bg-sponsors : #C0BFBF;
 $color-bg-footer : #323339;
 $color-gray-hover: #EAEAEA;
@@ -41,14 +42,21 @@ $susy: (
   }
 }
 
+@mixin wide {
+  @media only screen and (min-width: 781px) and (max-width: 1024px){
+    @content;
+  }
+}
+
 @mixin standard-settings {
   background-color: $color-white;
   text-rendering: optimizeLegibility;
-  width: $max-width-desktop;
+  //width: $max-width-desktop;
+  width: 100vw;
   font-weight: 300;
   @include phone {
-    width: $max-width-mobile;
-    //width: 100%;
+    //width: $max-width-mobile;
+    width: 100%;
   }
   @include tablet {
     //width:$max-width-tablet;

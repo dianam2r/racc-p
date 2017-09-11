@@ -1,0 +1,20 @@
+uuid: 1ea2f53c-337f-4939-8fa8-a37996c3515a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.work_study_items
+id: node.work_study_items.menu_link
+field_name: menu_link
+entity_type: node
+bundle: work_study_items
+label: 'Menu link'
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: d6345a19-a4ca-4799-87ad-c7960bc17f10
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faculty_and_staff_directory
+id: node.faculty_and_staff_directory.uid
+field_name: uid
+entity_type: node
+bundle: faculty_and_staff_directory
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getCurrentUserId'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.videos.body
+    - field.field.node.videos.field_media_file
     - node.type.videos
   module:
     - text
@@ -25,4 +26,6 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_media_file: true
+  langcode: true

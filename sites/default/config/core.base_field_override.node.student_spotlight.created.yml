@@ -1,0 +1,18 @@
+uuid: 6bae6dec-c148-42ba-a3ec-6c124e401a7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.student_spotlight
+id: node.student_spotlight.created
+field_name: created
+entity_type: node
+bundle: student_spotlight
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

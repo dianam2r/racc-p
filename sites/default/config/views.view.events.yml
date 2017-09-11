@@ -77,12 +77,12 @@ display:
         options:
           grouping: {  }
           columns: 3
-          automatic_width: true
+          automatic_width: false
           alignment: horizontal
           col_class_default: true
-          col_class_custom: ''
+          col_class_custom: calendar-event
           row_class_default: true
-          row_class_custom: ''
+          row_class_custom: calendar-event-container
       row:
         type: fields
         options:
@@ -449,14 +449,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h1
-          element_class: ''
+          element_type: div
+          element_class: calendar-date
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -465,7 +465,7 @@ display:
           type: datetime_custom
           settings:
             timezone_override: ''
-            date_format: 'M d, Y'
+            date_format: 'M d'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -513,14 +513,14 @@ display:
             trim: false
             preserve_tags: ''
             html: false
-          element_type: h2
-          element_class: ''
+          element_type: h3
+          element_class: event-title
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -737,7 +737,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '-1 month'
+            value: '-2 month'
             type: offset
           group: 1
           exposed: false

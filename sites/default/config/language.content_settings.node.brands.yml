@@ -1,0 +1,16 @@
+uuid: 66e50aeb-e3c4-4f47-9028-0ef379bd1e01
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.brands
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: node.brands
+target_entity_type_id: node
+target_bundle: brands
+default_langcode: site_default
+language_alterable: false

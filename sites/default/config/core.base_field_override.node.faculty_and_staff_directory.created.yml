@@ -1,0 +1,18 @@
+uuid: a4684f3f-0ba7-41d7-bbd2-b62032512016
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faculty_and_staff_directory
+id: node.faculty_and_staff_directory.created
+field_name: created
+entity_type: node
+bundle: faculty_and_staff_directory
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,18 @@
+uuid: 04e7c36c-4d63-417f-b10a-6fa855069534
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.current_posting_item
+id: node.current_posting_item.created
+field_name: created
+entity_type: node
+bundle: current_posting_item
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

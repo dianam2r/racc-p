@@ -1,0 +1,22 @@
+uuid: 85eadc4f-28b4-40ae-8824-5a0d257ac8ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faculty_and_staff_directory
+id: node.faculty_and_staff_directory.sticky
+field_name: sticky
+entity_type: node
+bundle: faculty_and_staff_directory
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

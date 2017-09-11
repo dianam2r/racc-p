@@ -1,0 +1,45 @@
+/*---------------------------*/
+/* LANGUAGE SWITCHER STYLING */
+/*---------------------------*/
+
+.laguage-switcher-container {
+  position: absolute;
+  z-index: 1;
+  margin-top: 10px;
+  margin-left: 80%;
+  @include phone {
+    margin-left: 30%;
+  }
+  .links {
+    @include inline-flex;
+    li {
+      list-style: none;
+      margin-left: 5px;
+      a {
+        font-size: 0px;
+        line-height: 0;
+        color: transparent;
+      }
+    }
+  }
+  .links {
+    .en {
+      a {
+        &::before {
+          content: url('../img/english-ico-small.png');
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
+    .es {
+      a {
+        &::before {
+          content: url('../img/spanish-ico-small.png');
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
+  }
+}

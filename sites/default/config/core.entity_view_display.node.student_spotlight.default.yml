@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.student_spotlight.body
     - field.field.node.student_spotlight.field_image
     - node.type.student_spotlight
-    - responsive_image.styles.document_image_size
+    - responsive_image.styles.featured_news_image_size
   module:
     - responsive_image
     - text
@@ -27,7 +27,7 @@ content:
     weight: 102
     label: hidden
     settings:
-      responsive_image_style: document_image_size
+      responsive_image_style: featured_news_image_size
       image_link: ''
     third_party_settings: {  }
     type: responsive_image
@@ -37,4 +37,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true

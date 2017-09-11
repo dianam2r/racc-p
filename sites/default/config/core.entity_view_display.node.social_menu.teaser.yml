@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.social_menu.body
+    - field.field.node.social_menu.field_image
+    - field.field.node.social_menu.field_url
     - node.type.social_menu
   module:
     - text
@@ -25,4 +27,7 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_image: true
+  field_url: true
+  langcode: true

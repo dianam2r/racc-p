@@ -13,7 +13,7 @@ _core:
 id: racctheme_tools
 theme: racctheme
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: 'system_menu_block:tools'
 settings:

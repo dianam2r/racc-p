@@ -49,6 +49,7 @@ jQuery(document).ready(function($){
     }else {
       cleanMenuTab();
       resizeTransparentLayer();
+      resizeSliderOverlay();
       $(".center-content li").each(function(){
         var flag = $(this).hasClass("active");
         if(flag){
@@ -64,24 +65,18 @@ jQuery(document).ready(function($){
   $("#toggle").click(function(){
     $("#toggle-content-container").toggle("slow");
   });
-    // And some style to it, since dynamic content can't get styled with defined classes
-/*  $("#toggleMenu li").hover(
-    function(){
-      $(this).css({'background':'#FFFFFF'})
-    },
-    function(){
-      $(this).css({'background':'none'})
-    });
-  $("#toggleMenu li a").css({
-    "color":"#000000",
-    "font-weight":"500"
-  });*/
-  /* End */
 
   /* This add the overlay (transparent degrade layer) effect to the slider */
   var overlay = $('<div class="slick-img-overlay">')
   $(".slide__media").append(overlay);
+  resizeSliderOverlay();
   /* End */
+
+function resizeSliderOverlay(){
+  $(".slick-img-overlay").css({
+    'height':$(".slick img").height()
+  });
+}
 
   /* Asign an id to every content on side-block */
   var div = $(".right-side");
@@ -281,6 +276,63 @@ jQuery(document).ready(function($){
       "display":"block"
     });
   });
+
+  $("#search").click(function(){
+    var keyTerm = $("#keyTerm").val();
+    $(location).attr('href','/racc-p/search/node?keys='+keyTerm);
+  });
   /* End */
 
+ /* This is to wrap the content of the spotlight in a wrapper */
+  var contentSpotlight;
+  $(".spotlight").after("<div class='spotlight-container' id='spotlight-container'></div>");
+  contentSpotlight = $(".spotlight-content-title").detach();
+  $("#spotlight-container").append(contentSpotlight);
+  contentSpotlight = $(".spotlight-content-body").detach();
+  $("#spotlight-container").append(contentSpotlight);
+  $(".spotlight").parent().addClass('spotlight-alignment');
+ /* End */
+
+ /* This is to wrap the image of featured news in a transparent overlay layer */
+ /*$(".news-img-overlay").css({
+   'width':$(".news-img-overlay img").width(),
+   'height':$(".news-img-overlay img").height()
+ });*/
+ /* End */
+
+ /* This is to adjust the date of the calendar events in a proper position */
+ $(".calendar-date").each(function(){
+   var calendarDate = $(this).text();
+   var dateEvent = calendarDate.split(" ",2);
+   $(this).html("");
+   $(this).append("<div class='month'>"+calendarDate.substr(4,5)+"</div>");
+   $(this).append("<div class='day'>"+calendarDate.substr(8,9)+"</div>");
+ });
+ /* End */
+
+ /* This is for the get connected segment - hard coded - */
+ var hasTitleRowClass =  $(".get-connected-content").parent().parent().hasClass("heading-row");
+ if(hasTitleRowClass){
+   $(".get-connected-content").parent().parent().removeClass("heading-row")
+ }
+ var hasTitleClass =  $(".get-connected-content").parent().hasClass("title-row");
+ if(hasTitleClass){
+   $(".get-connected-content").parent().removeClass("title-row");
+ }
+ $(".get-connected .show-more").detach();
+ /* End */
+
+ /* This is for the about racc segment */
+ var div = $(".racc-info-col");
+ div.attr("id",function(index){
+   return 'about-racc-col'+index;
+ });
+
+ var urlVideo = $(".racc-video").text();
+ urlVideo = $.trim(urlVideo);
+ $(".racc-video").html("");
+ $(".racc-video").append("<a href='"+urlVideo+"' rel='videoRACC'><img src='./themes/custom/racctheme/img/play-button.png'></a>");
+ $("a[rel^='videoRACC']").prettyPhoto();
+ 
+ /* End */
 });

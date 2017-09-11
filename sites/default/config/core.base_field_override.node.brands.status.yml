@@ -1,0 +1,22 @@
+uuid: cc7e5c6b-8c7c-4528-ad90-8c1050b2d294
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.brands
+id: node.brands.status
+field_name: status
+entity_type: node
+bundle: brands
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

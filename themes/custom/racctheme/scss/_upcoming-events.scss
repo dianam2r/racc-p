@@ -1,0 +1,136 @@
+.layout__region--bottom {
+  margin-top: 28%;
+  @include phone {
+    margin-top: 208%;
+  }
+  @include tablet {
+    margin-top: 750px;
+  }
+  @include wide {
+    margin-top: 430px;
+  }
+}
+
+/*-------------------------------------------*/
+/* UPCOMING EVENTS SECTION */
+/*-------------------------------------------*/
+.views-view-grid .views-row {
+  width: 90%;
+}
+.calendar-event-container {
+  position: absolute;
+  z-index: 2;
+  margin-top: 90px;
+  margin-left: 60px;
+  @include phone {
+    @include flexbox;
+    @include flex-flow(column);
+    margin-top: 60px;
+    margin-left: 26px;
+  }
+  @include tablet {
+    @include flexbox;
+    @include flex-flow(column);
+    margin-top: 60px;
+    margin-left: 26px;
+  }
+  @include wide {
+    //@include flexbox;
+    //@include flex-flow(column);
+    margin-top: 80px;
+    margin-left: 40px;
+  }
+}
+
+.calendar-event {
+    @include inline-flex;
+    @include flex-flow(row);
+    width: susy-span(4);
+    @include phone {
+      width: susy-span(11.4);
+      padding-top: 3px;
+      padding-left: 7px;
+      padding-bottom: 24px;
+    }
+    @include tablet {
+      width: susy-span(11.4);
+      padding-top: 3px;
+      padding-left: 7px;
+      padding-bottom: 24px;
+    }
+    @include wide {
+      width: susy-span(4);
+      padding-top: 3px;
+      padding-left: 7px;
+      padding-bottom: 24px;
+    }
+}
+
+.calendar-date {
+  @include flexbox;
+  @include flex-flow(column);
+  @include flex-wrap(wrap);
+  @include align-items(center);
+  .month {
+    background-color: $color-red;
+    color: $color-white;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-transform: uppercase;
+    padding: 0px 16px;
+    @include phone {
+      font-size: 19px;
+      padding: 0px 7px;
+      line-height: 1;
+    }
+    @include tablet {
+      font-size: 19px;
+      padding: 0px 7px;
+      line-height: 1;
+    }
+    @include wide {
+      font-size: 25px;
+      padding: 0px 16px;
+      line-height: 1.3;
+    }
+  }
+  .day {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: -5px;
+    @include phone {
+      font-size: 29px;
+    }
+    @include tablet {
+      font-size: 29px;
+    }
+    @include wide {
+      font-size: 50px;
+    }
+  }
+}
+
+.event-title {
+  padding-left: 20px;
+  padding-top: 15px;
+  @include phone {
+    padding-left: 14px;
+    padding-top: 15px;
+  }
+  @include tablet {
+    padding-left: 14px;
+    padding-top: 15px;
+  }
+  @include wide {
+    padding-left: 17px;
+    padding-top: 0px;
+  }
+  a {
+    text-decoration: none;
+    color: $color-black;
+    @include wide {
+      font-size: 20px;
+    }
+  }
+}

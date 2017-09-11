@@ -37,6 +37,7 @@ content:
     type: string
     region: content
 hidden:
+  langcode: true
   mail: true
   message: true
   name: true

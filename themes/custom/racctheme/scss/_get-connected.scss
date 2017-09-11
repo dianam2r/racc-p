@@ -1,0 +1,353 @@
+/*-------------------------------------------*/
+/* GETTING CONNECTED SECTION */
+/*-------------------------------------------*/
+
+/* ---- GENERAL ASSETS ---- */
+
+@mixin social-media {
+  width: susy-span(4);
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  @include phone {
+    width: 30%;
+  }
+  a {
+    font-family: $simbols-font;
+    color: $color-red;
+    font-size: 40px;
+    background-color: $color-white;
+    border-radius: 25px;
+    padding: 5px 9px;
+  }
+}
+
+@mixin social-instagram-bar($top, $left) {
+    padding-top: $top;
+    padding-left: $left;
+    color: $color-white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@mixin social-twitter-bar {
+     background-color: #F0F0F2;
+     height: 397px;
+     .message, .social-twitter {
+       span {
+         color: $color-red;
+       }
+     }
+     .message p {
+       font-size: 16.5px;
+       line-height: 1.2;
+       padding-top: 153px;
+       padding-left: 36px;
+       padding-right: 40px;
+       color: $color-gray-one;
+       @include phone {
+          padding-top: 136px;
+       }
+     }
+     .social-twitter {
+       p {
+         padding-top: 114px;
+         padding-left: 17px;
+         font-size: 14px;
+         @include phone {
+           padding-top: 116px;
+         }
+         span {
+           padding-left: 99px;
+           &::before {
+             content: "\f099";
+             font-family: $simbols-font;
+             padding-right: 80px;
+           }
+           @include phone {
+             padding-left: 89px;
+           }
+         }
+       }
+     }
+}
+
+/* ---- END GENERAL ASSETS ---- */
+
+.get-connected {
+  width: 100%;
+  margin-top: 300px;
+  @include phone {
+    margin-top: 350px;
+  }
+}
+
+.get-connected-content {
+    @include inline-flex;
+    @include phone {
+      @include flexbox;
+      @include flex-flow(column);
+    }
+}
+
+.first-col,
+.second-col,
+.third-col,
+.fourth-col {
+  width: susy-span(3);
+  @include phone {
+    width: 100%;
+  }
+}
+
+.first-col {
+  @include flex;
+    h1 {
+      text-transform: uppercase;
+      background-color: $color-red;
+      color: $color-white;
+      font-weight: 300;
+      font-size: 50px;
+      height : 300px;
+      line-height: 1;
+      word-spacing: 3px;
+      padding-top: 40px;
+      padding-left: 37px;
+      @include phone {
+        font-size: 40px;
+        height : 275px;
+        line-height: 1.15;
+        word-spacing: 6px;
+        padding-top: 36px;
+        padding-left: 35px;
+      }
+    }
+    .social {
+      background-color: $color-red;
+      height: 130px;
+      img {
+        padding-top: 35px;
+        padding-left: 41px;
+      }
+    }
+    .stairs {
+      height: 397px;
+      position: relative;
+      overflow-y: hidden;
+      @include phone {
+        height: 374px;
+      }
+    .social-instagram {
+      p {
+        @include social-instagram-bar(353px,114px);
+        @include phone {
+          @include social-instagram-bar(322px,44px);
+        }
+        span {
+          &::before {
+            content: "\f16d";
+            font-family: $simbols-font;
+            padding-right: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.social {
+  @include flexbox;
+  @include flex-flow(column);
+  margin-top: -37px;
+  position: relative;
+  .social-row1 {
+    .social-media-facebook {
+      @include social-media ;
+      a {
+        padding: 5px 14px;
+        &::after{
+          content: '\f09a';
+        }
+      }
+    }
+    .social-media-twitter {
+      margin-left: 33%;
+      @include phone {
+        //margin-left: 33%;
+      }
+      @include social-media ;
+      a {
+        padding: 5px 8px;
+        &::after{
+          content: '\f099';
+        }
+      }
+    }
+    .social-media-youtube {
+      margin-left: 66%;
+      @include phone {
+        //margin-left: 66%;
+      }
+      @include social-media ;
+      a {
+        &::after{
+          content: '\f167';
+        }
+      }
+    }
+  }
+  .social-row2 {
+    margin-top: 60px;
+    .social-media-linkedin {
+      @include social-media ;
+      a {
+        &::after{
+          content: '\f0e1';
+        }
+      }
+    }
+    .social-media-snapchat {
+      margin-left: 33%;
+      @include phone {
+        //margin-left: 33%;
+      }
+      @include social-media ;
+      a {
+        &::after{
+          content: '\f2ab';
+        }
+      }
+    }
+    .social-media-instagram {
+      margin-left: 66%;
+      @include phone {
+        //margin-left: 66%;
+      }
+      @include social-media ;
+      a {
+        &::after{
+          content: '\f16d';
+        }
+      }
+    }
+  }
+}
+
+.social-img-background {
+  position: absolute;
+  z-index: -1;
+  img {
+    height: 100%;
+  }
+}
+
+.second-col {
+  @include flex;
+  .back-to-school {
+    height: 400px;
+    @include phone {
+      height: 376px;
+    }
+    .social-instagram {
+      p {
+        @include social-instagram-bar(353px,114px);
+        @include phone {
+          @include social-instagram-bar(322px,44px);
+        }
+        span {
+          &::before {
+            content: "\f16d";
+            font-family: $simbols-font;
+            padding-right: 80px;
+          }
+        }
+      }
+    }
+  }
+  .advice {
+    @include phone{
+      height: 376px;
+    }
+    @include social-twitter-bar;
+  }
+}
+
+.third-col {
+  @include flex;
+  .advice {
+    @include social-twitter-bar;
+    height: 399px;
+    @include phone {
+      height: 374px;
+    }
+    .message p {
+      padding-top: 138px;
+      @include phone {
+        padding-top: 137px;
+      }
+    }
+    .social-twitter p{
+      padding-top: 127px;
+      @include phone {
+        padding-top: 114px;
+      }
+    }
+  }
+  .racc-entrance {
+      height: 398px;
+      position: relative;
+      overflow-y: hidden;
+      @include phone {
+        height: 375px;
+      }
+      .social-instagram {
+        p {
+          @include social-instagram-bar(353px,114px);
+          @include phone {
+            @include social-instagram-bar(322px,44px);
+          }
+          span {
+            &::before {
+              content: "\f16d";
+              font-family: $simbols-font;
+              padding-right: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .fourth-col {
+    @include flex;
+    .racc-product {
+      height: 399px;
+      position: relative;
+      overflow-y: hidden;
+      @include phone {
+        height: 374px;
+      }
+      .social-instagram {
+        p {
+          @include social-instagram-bar(353px,114px);
+          @include phone {
+            @include social-instagram-bar(322px,44px);
+          }
+          span {
+            &::before {
+              content: "\f16d";
+              font-family: $simbols-font;
+              padding-right: 80px;
+            }
+          }
+        }
+      }
+    }
+    .advice {
+      height: 398px;
+      @include phone {
+        height: 375px;
+      }
+      @include social-twitter-bar;
+    }
+  }
