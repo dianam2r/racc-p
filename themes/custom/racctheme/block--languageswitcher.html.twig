@@ -51,19 +51,19 @@
     <h2 {{ title_attributes }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
-
-  {% if content_attributes|length %}
-  <div {{ content_attributes }} class="laguage-switcher-container">
-    {% endif %}
-
-    {% block content %}
-      {{ content }}
-    {% endblock %}
-
+  <div  class="laguage-switcher-container">
     {% if content_attributes|length %}
-  </div>
-  {% endif %}
+    <div {{ content_attributes }}>
+      {% endif %}
 
+      {% block content %}
+        {{ content }}
+      {% endblock %}
+
+      {% if content_attributes|length %}
+    </div>
+    {% endif %}
+  </div>
   {% if block.delta != 'main' %}
 </section>
 {% endif %}

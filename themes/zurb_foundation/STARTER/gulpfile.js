@@ -2,11 +2,11 @@
 
 // Load Gulp and tools we will use.
 var $          = require('gulp-load-plugins')(),
-    del        = require('del'),
-    extend     = require('extend'),
-    fs         = require("fs"),
-    gulp       = require('gulp'),
-    importOnce = require('node-sass-import-once');
+  del        = require('del'),
+  extend     = require('extend'),
+  fs         = require("fs"),
+  gulp       = require('gulp'),
+  importOnce = require('node-sass-import-once');
 
 var options = {};
 
@@ -31,9 +31,11 @@ options.theme = {
 // Define the node-scss configuration.
 options.scss = {
   importer: importOnce,
+  outputStyle: 'compressed',
+  lintIgnore: 'scss/_settings.scss',
   includePaths: [
-    options.rootPath.project + 'bower_components/foundation-sites/scss',
-    options.rootPath.project + 'bower_components/motion-ui/src'
+    options.rootPath.project + 'node_modules/foundation-sites/scss',
+    options.rootPath.project + 'node_modules/motion-ui/src'
   ],
 };
 
@@ -84,7 +86,7 @@ gulp.task('sass', ['clean:css'], function () {
     // Allow the options object to override the defaults for the task.
     .pipe($.sass(extend(true, {
       noCache: true,
-      outputStyle: 'compressed',
+      outputStyle: options.scss.outputStyle,
       sourceMap: true
     }, options.scss)).on('error', $.sass.logError))
     .pipe($.autoprefixer(options.autoprefixer))
@@ -105,13 +107,13 @@ gulp.task('clean:css', function () {
 // Defines a task that triggers a Drush cache clear (css-js), you need to edit
 // config.js to be able to use this task.
 gulp.task('drush:cc', function () {
-  if (!config.drush.enabled) {
+  if (!options.drush.enabled) {
     return;
   }
 
   return gulp.src('', {read: false})
     .pipe($.shell([
-      config.drush.alias.css_js
+      options.drush.alias.css_js
     ]));
 });
 
@@ -119,7 +121,11 @@ gulp.task('drush:cc', function () {
 gulp.task('lint:sass', function () {
   return gulp.src(options.theme.scss + '**/*.scss')
     // use gulp-cached to check only modified files.
-    .pipe($.cached('scsslint'))
-    .pipe($.sassLint())
+    .pipe($.sassLint({
+      files: {
+        include: $.cached('scsslint'),
+        ignore: options.scss.lintIgnore
+      }
+    }))
     .pipe($.sassLint.format());
 });

@@ -10,7 +10,7 @@ keep up with Drupal 8 and Foundation 6 development.
 
 See STARTER/README.txt for how to create a starter theme using this base theme.
 
-Zurb Foundation 6 has switched from compass to bower, npm and gulp for
+Zurb Foundation 6 has switched from compass to npm and gulp for
 dependency management and generating CSS from scss files.
 
 Foundation Docs
@@ -21,22 +21,17 @@ http://foundation.zurb.com/docs/
 Drupal-specific zurb_foundation theme documentation is here:
 https://www.drupal.org/node/1948260
 
-Installing npm and bower
+Installing npm
 ------------------------
 
 NodeJS with included node package manager (npm) is required to build the site
 dependencies. Download from https://nodejs.org/ . Mac OS X users can install
 nodejs with homebrew ( http://brew.sh/ ) for streamlined version updates.
 
-To install bower globally:
-
-`npm install -g bower`
-
 If all went well during installation, you should be able to type this at
 the command line, from inside the theme directory:
 
 `npm install`
-`bower install`
 
 This will install the latest versions of Zurb Foundation and its interaction
 library, motion-ui, into the theme.
@@ -45,17 +40,16 @@ Dependencies
 ------------
 
 After everything is installed, Zurb Foundation theme dependencies are managed
-with bower.json, composer.json, and package.json . A hidden override file,
-.bowerrc , prevents a redundant copy of jQuery from being added to the theme.
+with composer.json and package.json.
 
 This manages dependencies and their versions for Foundation core and addons.
 
 If you need to generate a theme with a different incremental version of
-foundation or motion-ui, edit these version strings in bower.json:
+foundation or motion-ui, edit these version strings in package.json:
 
-  "dependencies": {
-    "foundation-sites": "~6.2.1",
-    "motion-ui": "~1.2.2"
+  "devDependencies": {
+    "foundation-sites": "~6.3.1",
+    "motion-ui": "~1.2.2",
   },
 
 Then running `npm start` will copy the new files from dist to the production
@@ -67,7 +61,7 @@ Installing this theme
 To install Zurb Foundation, copy zurb_foundation into the root-level themes
 directory, or into a sites/*/themes directory, as zurb_foundation.
 
-Once copied, after npm and bower have run their installers, you can enable
+Once copied, after npm has ran its installer, you can enable
 the theme by visiting "/admin/appearance" and clicking
 "Install and set as default" under the ZURB Foundation block.
 

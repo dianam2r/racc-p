@@ -51,9 +51,9 @@
     <h2 {{ title_attributes }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
-
+<div class="about-racc-college">
   {% if content_attributes|length %}
-  <div {{ content_attributes }} class="about-racc-college">
+  <div {{ content_attributes }} class="">
     {% endif %}
     <div class="about-racc-college-background">
     </div>
@@ -65,7 +65,7 @@
     {% if content_attributes|length %}
   </div>
   {% endif %}
-
+</div>
   {% if block.delta != 'main' %}
 </section>
 {% endif %}

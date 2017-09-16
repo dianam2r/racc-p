@@ -47,6 +47,7 @@ module:
   panels_ipe: 0
   path: 0
   quickedit: 0
+  racc_social: 0
   rdf: 0
   responsive_image: 0
   responsive_menu: 0

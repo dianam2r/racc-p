@@ -1,0 +1,39 @@
+racc_social.twitter:
+  path: '/racc_social_twitter'
+  defaults:
+    _controller: '\Drupal\racc_social\Controller\TwitterController::getTweet'
+    _title: 'Twitter Feed'
+  requirements:
+    _access: 'TRUE'
+
+racc_social.facebook:
+  path: '/racc_social_facebook'
+  defaults:
+    _controller: '\Drupal\racc_social\Controller\FacebookController::getPost'
+    _title: 'Facebook Post'
+  requirements:
+    _access: 'TRUE'
+
+racc_social.facebook.login:
+  path: '/racc_social_facebook/login'
+  defaults:
+    _controller: '\Drupal\racc_social\Controller\FacebookController::logIn'
+    _title: 'Facebook LogIn'
+  requirements:
+    _access: 'TRUE'
+
+racc_social.facebook.callback:
+  path: '/racc_social_facebook/callback'
+  defaults:
+    _controller: '\Drupal\racc_social\Controller\FacebookController::callback'
+    _title: 'Facebook LogIn'
+  requirements:
+    _access: 'TRUE'
+
+racc_social.instagram:
+  path: '/racc_social_instagram'
+  defaults:
+    _controller: '\Drupal\racc_social\Controller\InstagramController::getPicture'
+    _title: 'Instagram Pictures'
+  requirements:
+    _access: 'TRUE'

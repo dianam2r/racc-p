@@ -1,0 +1,5 @@
+name: racc_social
+type: module
+description: This is the social feed module from all RACC social medias
+core: 8.x
+package: Custom

@@ -51,9 +51,9 @@
     <h2 {{ title_attributes }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
-
+<div class="featured-news">
   {% if content_attributes|length %}
-  <div {{ content_attributes }} class="featured-news">
+  <div {{ content_attributes }} class="">
     {% endif %}
 
     {% block content %}
@@ -63,7 +63,7 @@
     {% if content_attributes|length %}
   </div>
   {% endif %}
-
+</div>
   {% if block.delta != 'main' %}
 </section>
 {% endif %}

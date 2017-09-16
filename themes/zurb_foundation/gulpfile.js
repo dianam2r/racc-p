@@ -3,8 +3,8 @@ var $    = require('gulp-load-plugins')();
 var gutil = require('gulp-util');
 
 var sassPaths = [
-  'bower_components/foundation-sites/scss',
-  'bower_components/motion-ui/src'
+  'node_modules/foundation-sites/scss',
+  'node_modules/motion-ui/src'
 ];
 
 gulp.task('sass', function() {
@@ -20,16 +20,16 @@ gulp.task('sass', function() {
 });
 
 gulp.task('copy', function() {
-  gulp.src('bower_components/foundation-sites/dist/css/*.css')
+  gulp.src('node_modules/foundation-sites/dist/css/*.css')
+    .pipe($.copy('css', {prefix: 4}));
+  gulp.src('node_modules/foundation-sites/dist/js/*.js')
+    .pipe($.copy('js', {prefix: 4}));
+  gulp.src('node_modules/motion-ui/dist/*.css')
     .pipe($.copy('css', {prefix: 3}));
-  gulp.src('bower_components/foundation-sites/dist/js/*.js')
+  gulp.src('node_modules/motion-ui/dist/*.js')
     .pipe($.copy('js', {prefix: 3}));
-  gulp.src('bower_components/motion-ui/dist/*.css')
-    .pipe($.copy('css', {prefix: 3}));
-  gulp.src('bower_components/motion-ui/dist/*.js')
-    .pipe($.copy('js', {prefix: 3}));
-  var activity = "Stylesheets and scripts from /bower_components/foundation-sites/dist and";
-  activity += " bower_components/motion-ui/dist copied to /css and /js.";
+  var activity = "Stylesheets and scripts from /node_modules/foundation-sites/dist and";
+  activity += " node_modules/motion-ui/dist copied to /css and /js.";
   gutil.log(activity);
 });
 

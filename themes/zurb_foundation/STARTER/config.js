@@ -1,19 +1,25 @@
+// Override gulp options here rather than in gulpfile.js.
+
+// Set a drush alias if required to run locally, i.e.:
+// '@multisite.local --uri=multisitename'
+var drush_alias = '';
+
 module.exports = {
-  // Override options object in gulpfile.js, try not to override gulpfile.js if
-  // not not necessary.
+  // set 'enabled: true' to run drush commands as a part of 'gulp watch'.
   drush: {
-    enabled: true,
+    enabled: false,
     alias: {
-      css_js: 'drush cc css-js',
-      cr: 'drush cr'
+      css_js: 'drush ' + drush_alias + ' cc css-js',
+      cr: 'drush ' + drush_alias + ' cr'
     }
   },
 
   // Override sass compile options.
   /*
   scss: {
-    outputStyle: 'expanded'
-  }
+    outputStyle: 'expanded',
+    lintIgnore: '',
+  },
   */
 
   // If your files are on a network share, you may want to turn on polling for
@@ -22,7 +28,7 @@ module.exports = {
   gulpWatchOptions: {
     interval: 1000,
     mode: 'poll'
-  }
+  },
   */
 
 };

@@ -31,6 +31,14 @@
     font-weight: 400;
 }
 
+@mixin social-facebook-bar($top, $left) {
+    padding-top: $top;
+    padding-left: $left;
+    color: $color-white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
 @mixin social-twitter-bar {
      background-color: #F0F0F2;
      height: 397px;
@@ -52,7 +60,7 @@
      }
      .social-twitter {
        p {
-         padding-top: 114px;
+         padding-top: 97px;
          padding-left: 17px;
          font-size: 14px;
          @include phone {
@@ -62,6 +70,7 @@
            padding-left: 99px;
            &::before {
              content: "\f099";
+             font-size: 20px;
              font-family: $simbols-font;
              padding-right: 80px;
            }
@@ -73,6 +82,10 @@
      }
 }
 
+.media-message {
+  font-size: 18px;
+  width: 200px;
+}
 /* ---- END GENERAL ASSETS ---- */
 
 .get-connected {
@@ -139,6 +152,7 @@
         height: 374px;
       }
     .social-instagram {
+      position: relative;
       p {
         @include social-instagram-bar(353px,114px);
         @include phone {
@@ -147,6 +161,7 @@
         span {
           &::before {
             content: "\f16d";
+            font-size: 20px;
             font-family: $simbols-font;
             padding-right: 80px;
           }
@@ -236,9 +251,11 @@
 
 .social-img-background {
   position: absolute;
-  z-index: -1;
+  z-index: -0;
+  height: 100%;
   img {
     height: 100%;
+    width: 100%;
   }
 }
 
@@ -246,18 +263,30 @@
   @include flex;
   .back-to-school {
     height: 400px;
+    position: relative;
     @include phone {
       height: 376px;
     }
-    .social-instagram {
+    .social-facebook {
+      position: relative;
+      background-color: transparent;
+      &:hover{
+        background-color: $color-white-transparent;
+        height: 100%;
+      }
       p {
         @include social-instagram-bar(353px,114px);
         @include phone {
           @include social-instagram-bar(322px,44px);
         }
-        span {
+        padding-top: 300px;
+        span.media-message {
+          padding-right : 10px;
+        }
+        span.logo-social-instagram {
           &::before {
-            content: "\f16d";
+            content: "\f09a";
+            font-size: 20px;
             font-family: $simbols-font;
             padding-right: 80px;
           }
@@ -265,19 +294,47 @@
       }
     }
   }
-  .advice {
-    @include phone{
-      height: 376px;
+  .stairs {
+    height: 397px;
+    position: relative;
+    overflow-y: hidden;
+    @include phone {
+      height: 374px;
     }
-    @include social-twitter-bar;
+  .social-instagram {
+    position: relative;
+    p {
+      @include social-instagram-bar(353px,114px);
+      @include phone {
+        @include social-instagram-bar(322px,44px);
+      }
+      span {
+        &::before {
+          content: "\f16d";
+          font-size: 20px;
+          font-family: $simbols-font;
+          padding-right: 80px;
+        }
+      }
+    }
   }
+}
+.advice {
+  @include phone{
+    height: 376px;
+  }
+  @include social-twitter-bar;
+}
 }
 
 .third-col {
   @include flex;
   .advice {
     @include social-twitter-bar;
-    height: 399px;
+    height: 397px;
+    &:hover{
+      background-color: transparentize($color-red, 0.5);
+    }
     @include phone {
       height: 374px;
     }
@@ -288,21 +345,23 @@
       }
     }
     .social-twitter p{
-      padding-top: 127px;
+      padding-top: 108px;
       @include phone {
         padding-top: 114px;
       }
     }
   }
   .racc-entrance {
-      height: 398px;
+      height: 400px;
       position: relative;
       overflow-y: hidden;
       @include phone {
         height: 375px;
       }
       .social-instagram {
+        position: relative;
         p {
+          padding-top: 358px;
           @include social-instagram-bar(353px,114px);
           @include phone {
             @include social-instagram-bar(322px,44px);
@@ -310,6 +369,7 @@
           span {
             &::before {
               content: "\f16d";
+              font-size: 20px;
               font-family: $simbols-font;
               padding-right: 80px;
             }
@@ -321,21 +381,32 @@
   .fourth-col {
     @include flex;
     .racc-product {
-      height: 399px;
+      height: 397px;
       position: relative;
       overflow-y: hidden;
       @include phone {
         height: 374px;
       }
-      .social-instagram {
+      .social-facebook {
+        position: relative;
+        background-color: transparent;
+        &:hover{
+          background-color: $color-white-transparent;
+          height: 100%;
+        }
         p {
           @include social-instagram-bar(353px,114px);
           @include phone {
             @include social-instagram-bar(322px,44px);
           }
-          span {
+          padding-top: 300px;
+          span.media-message {
+            padding-right : 10px;
+          }
+          span.logo-social-instagram {
             &::before {
-              content: "\f16d";
+              content: "\f09a";
+              font-size: 20px;
               font-family: $simbols-font;
               padding-right: 80px;
             }
@@ -344,10 +415,15 @@
       }
     }
     .advice {
-      height: 398px;
+      &:hover{
+        background-color: transparentize($color-red, 0.5);
+      }
       @include phone {
         height: 375px;
       }
       @include social-twitter-bar;
     }
+  }
+  .fourth-col .advice {
+    height: 400px;
   }

@@ -15,11 +15,13 @@ template.php THEMENAME_preprocess_html function.
 
 *** IMPORTANT NOTE ***
 * After adding a new theme in Drupal 8, you'll need to clear the theme registry's
-* cache, which you can do by clearing all cache in the UI or running `drush cr` ,
-* if you have Drush installed.
+cache, which you can do by clearing all cache in the UI or running `drush cr` ,
+if you have Drush installed.
 
-Automatic drush sub-theme setup
+Using Drush
 -------------------------------
+
+**Automatic drush sub-theme setup**
 
 To create a sub-theme, simply run the Drush command `drush fst sub_theme`, where
 "sub_theme" is the desired machine name of your sub-theme. Once a sub-theme is
@@ -27,6 +29,15 @@ created, you can enable it at /admin/appearance .
 
 Then follow step 6 below to generate the necessary Foundation files that are not
 included in the repository by default.
+
+**Drush and Gulp**
+
+The `gulpfile.js` includes drush commands that can be run every time scss/css
+is updated. To use drush, edit the `config.js` file. In the `drush` option:
+
+1. Set `enabled: false` to `enabled: true`
+1. (Optional) Set the `drush_alias` variable.
+
 
 Manual sub-theme setup
 ----------------------
@@ -83,16 +94,15 @@ Manual sub-theme setup
     admin/appearance and click the "Enable and set default" link next to your
     new sub-theme.
 
- 6. This theme uses bower and npm. You will need both of those on your machine
-    as a prerequisite for developing your theme, although once in production npm
-    and bower are not necessary for general use.
+ 6. This theme uses npm which you will need to install as a prerequisite for
+    developing your theme, although once in production it is not necessary for
+    general use.
 
-    Once you have ensured those are installed, run these commands at the root of
+    Once you have ensured npm is installed, run this command at the root of
     your sub theme:
     - `npm install`
-    - `bower install`
 
-    Finally, run `npm start` to run the Sass compiler. or 'npm run watch' which
+    Finally, run `gulp` to run the Sass compiler, or 'gulp watch' which
     will re-run every time you save a Sass file. Press Ctrl-C to break out of
     watching files.
 

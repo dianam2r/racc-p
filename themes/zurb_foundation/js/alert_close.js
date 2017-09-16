@@ -15,12 +15,14 @@
         var $target = $(event.target);
         var $region = $target.parent();
 
-        // Remove this alert from the DOM
-        $target.remove();
+        // Remove this alert from the DOM, if it has no siblings.
+        if (!$target.siblings().length) {
+          $target.remove();
 
-        // Trim newlines out of the highlighted region, so that our :empty
-        // selector still works.
-        $region.html($region.html().replace(/\n/g, ''));
+          // Trim newlines out of the highlighted region, so that our :empty
+          // selector still works.
+          $region.html($region.html().replace(/\n/g, ''));
+        }
       });
     }
   };

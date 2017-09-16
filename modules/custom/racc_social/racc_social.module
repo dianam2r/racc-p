@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains racc_social.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function racc_social_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the racc_social module.
+    case 'help.page.racc_social':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This is the social feed module from all RACC social medias') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function racc_social_theme() {
+  return [
+    'racc_social' => [
+      'render element' => 'children',
+    ],
+  ];
+}

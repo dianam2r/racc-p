@@ -13,11 +13,11 @@ dependencies:
     - views.view.student_spotlight
   content:
     - 'block_content:basic:21d5291f-063d-45bf-84f9-add24d0bc7c6'
-    - 'block_content:basic:4b3f9e4c-af09-40d3-9395-d1096e3bf7db'
   module:
     - block_content
     - contact_block
     - panels
+    - racc_social
     - views
 id: homepage-panels_variant-0
 label: Homepage
@@ -77,20 +77,8 @@ variant_settings:
       views_label: ''
       items_per_page: none
       region: bottom
-      weight: -3
+      weight: -4
       uuid: a50796ce-3bbc-4108-a29e-48ffc3678910
-      context_mapping: {  }
-    305f29f4-58cb-43ef-80b0-dbda9ff1cdeb:
-      id: 'block_content:4b3f9e4c-af09-40d3-9395-d1096e3bf7db'
-      label: 'Get Connected'
-      provider: block_content
-      label_display: '0'
-      status: true
-      info: ''
-      view_mode: full
-      region: bottom
-      weight: -2
-      uuid: 305f29f4-58cb-43ef-80b0-dbda9ff1cdeb
       context_mapping: {  }
     87ce3e4a-44dd-428e-9d85-5522fe7cf90d:
       id: contact_block
@@ -121,8 +109,17 @@ variant_settings:
       views_label: ''
       items_per_page: none
       region: bottom
-      weight: 0
+      weight: 1
       uuid: c09aa6a5-133b-435f-86b3-822414ac7c82
+      context_mapping: {  }
+    1a8431d7-73a9-47f9-84e3-45b0187d3023:
+      id: racc_social_block
+      label: 'Racc social block'
+      provider: racc_social
+      label_display: '0'
+      region: bottom
+      weight: -3
+      uuid: 1a8431d7-73a9-47f9-84e3-45b0187d3023
       context_mapping: {  }
   id: panels_variant
   uuid: a6e533a5-8b62-430a-9889-f25ab9aa6ba1

@@ -76,7 +76,6 @@ function drush_zurb_foundation_foundation_sub_theme($name = NULL, $machine_name 
   drush_op('zurb_foundation_file_str_replace', "$subtheme_path/theme-settings.php", 'STARTER', "$machine_name");
   drush_op('zurb_foundation_file_str_replace', "$subtheme_path/$machine_name.info.yml", 'STARTER', "$machine_name");
   drush_op('zurb_foundation_file_str_replace', "$subtheme_path/gulpfile.js", 'STARTER', "$machine_name");
-  drush_op('zurb_foundation_file_str_replace', "$subtheme_path/bower.json", 'STARTER', "$name");
   drush_op('zurb_foundation_file_str_replace', "$subtheme_path/package.json", 'STARTER', "$name");
 
   // Notify user of the newly created theme.
