@@ -29,15 +29,15 @@ class RaccSocialBlock extends BlockBase {
     $client = \Drupal::httpClient();
     try {
       //Getting response from Instagram;
-      $instagramRequest = $client->get('http://dev-racc-p.pantheonsite.io/racc-p/racc_social_instagram');
+      $instagramRequest = $client->get('http://dev-racc-p.pantheonsite.io/racc_social_instagram');
       $instagramResponse = $instagramRequest->getBody();
       $instagramResponse = json_decode($instagramResponse,true);
       //Getting response from Facebook;
-      $facebookRequest = $client->get('http://dev-racc-p.pantheonsite.io/racc-p/racc_social_facebook');
+      $facebookRequest = $client->get('http://dev-racc-p.pantheonsite.io/racc_social_facebook');
       $facebookResponse = $facebookRequest->getBody();
       $facebookResponse = json_decode($facebookResponse,true);
       //Getting response from Twitter;
-      $twitterRequest = $client->get('http://dev-racc-p.pantheonsite.io/racc-p/racc_social_twitter');
+      $twitterRequest = $client->get('http://dev-racc-p.pantheonsite.io/racc_social_twitter');
       $twitterResponse = $twitterRequest->getBody();
       $twitterResponse = json_decode($twitterResponse,true);
     } catch (RequestException $e) {

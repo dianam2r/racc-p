@@ -60,7 +60,7 @@ class FacebookController extends ControllerBase {
     $helper = $fb->getRedirectLoginHelper();
 
     $permissions = ['user_posts']; // Optional permissions
-    $loginUrl = $helper->getLoginUrl('http://dev-racc-p.pantheonsite.io/racc-p/racc_social_facebook/callback', $permissions);
+    $loginUrl = $helper->getLoginUrl('http://dev-racc-p.pantheonsite.io/racc_social_facebook/callback', $permissions);
 
     return new Response( '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>');
   }
@@ -111,13 +111,10 @@ class FacebookController extends ControllerBase {
     // Get the access token metadata from /debug_token
     $tokenMetadata = $oAuth2Client->debugToken($accessToken);
     $print .= '<h3>Metadata</h3>';
-    //var_dump($tokenMetadata);
-    //$print .= $tokenMetadata;
 
     // Validation (these will throw FacebookSDKException's when they fail)
     $tokenMetadata->validateAppId('147312909196744'); // Replace {app-id} with your app id
     // If you know the user ID this access token belongs to, you can validate it here
-    //$tokenMetadata->validateUserId('123');
     $tokenMetadata->validateExpiration();
 
     if (! $accessToken->isLongLived()) {
@@ -130,7 +127,6 @@ class FacebookController extends ControllerBase {
       }
 
       $print .= '<h3>Long-lived</h3>';
-      //var_dump($accessToken->getValue());
       $print .= $accessToken->getValue();
     }
 
@@ -138,7 +134,6 @@ class FacebookController extends ControllerBase {
 
     // User is logged in with a long-lived access token.
     // You can redirect them to a members-only page.
-    //header('Location: https://example.com/members.php');
     return new Response($print.'<br><br>'.$_SESSION['fb_access_token']);
   }
 
