@@ -41,3 +41,10 @@ function racc_social_theme($existing, $type, $theme, $path) {
     ],
   ];
 }
+
+/**
+ * Implements hook_page_attachments().
+ */
+function racc_social_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'racc_social/racc_social_js';
+}
