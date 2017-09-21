@@ -24,20 +24,4 @@ class RaccSocialBlock extends BlockBase {
     return $build;
   }
 
-  /**
-   * This function retrieves de data from de social containers.
-   */
-  public function getData() {
-    $client = \Drupal::httpClient();
-    try {
-      $request = $client->get('http://dev-racc-p.pantheonsite.io/racc_social_posts');
-      $response = $request->getBody();
-      $response = json_decode($response, TRUE);
-    }
-    catch (RequestException $e) {
-      $response = $e->getMessage();
-    }
-    return $response;
-  }
-
 }
