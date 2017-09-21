@@ -21,6 +21,12 @@ footer {
       height: 803px;
       padding-top: 71px;
     }
+    @include tablet {
+      @include flexbox;
+      @include flex-flow(column);
+      height: 803px;
+      padding-top: 71px;
+    }
     .footer-menu-mobile {
       display: none;
       @include phone {
@@ -52,6 +58,35 @@ footer {
           }
         }
       }
+      @include tablet {
+        display: block;
+        width: susy-span(12);
+        padding-top: 2px;
+        @include align-content(center);
+        li {
+          list-style: none;
+          font-size: 15px;
+          padding-left: 0px;
+          margin-bottom: 36px;
+          a {
+            background-color: $color-black;
+            color: $color-white;
+            font-family: $title-font;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-decoration: none;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+            padding: 10px 38.6vw;
+          }
+          &:first-child a{
+            padding: 10px 42vw;
+          }
+          &:last-child a{
+            padding: 10px 40.5vw;
+          }
+        }
+      }
     }
     .sitemap{
       width: susy-span(7);
@@ -65,6 +100,12 @@ footer {
         margin-right: 0%;
         margin-top: 98%;
       }
+      @include tablet {
+        width: susy-span(12);
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 50%;
+      }
       .hiperlinks {
         @include inline-flex;
         font-size: 10px;
@@ -72,6 +113,9 @@ footer {
         letter-spacing: 1px;
         border-bottom: 1px solid;
         @include phone {
+          display: none;
+        }
+        @include tablet {
           display: none;
         }
         .menu {
@@ -93,40 +137,6 @@ footer {
             }
           }
         }
-      /*  .popular-links,
-        .contact-information,
-        .policies,
-        .login-center {
-          h3 {
-            color: $color-red;
-            padding-bottom: 22px;
-          }
-          li {
-            list-style: none;
-            padding-bottom: 11px;
-            font-size: 11.3px;
-            a {
-              color: $color-white;
-              text-decoration: none;
-            }
-          }
-        }
-        .popular-links {
-          width: 40%;
-          padding-left: 3px;
-        }
-        .contact-information {
-          width: 30%;
-          padding-left: 11px;
-        }
-        .policies {
-          width: 40%;
-          padding-left: 56px;
-        }
-        .login-center {
-          width: 20%;
-          padding-left: 11px;
-        }*/
       }
       hr {
         margin-top: 29px;
@@ -137,8 +147,14 @@ footer {
         @include phone {
           display: none;
         }
+        @include tablet {
+          display: none;
+        }
       }
       .social {
+        @include tablet {
+          margin-top: 0px;
+        }
         .social-row1 {
           .social-media-facebook {
             a {
@@ -205,11 +221,20 @@ footer {
         width: susy-span(12);
         margin-top: -400px;
       }
+      @include tablet {
+        width: susy-span(12);
+        margin-top: -440px;
+      }
       .racc-white {
         padding-left: 52px;
         padding-bottom: 45px;
         @include phone {
           padding-left: 110px;
+          padding-top: 21px;
+          padding-bottom: 25px;
+        }
+        @include tablet {
+          padding-left: 31vw;
           padding-top: 21px;
           padding-bottom: 25px;
         }
@@ -226,6 +251,9 @@ footer {
         @include phone {
           display: none;
         }
+        @include tablet {
+          display: none;
+        }
         p {
           font-family: $title-font;
           font-size: 11px;
@@ -238,6 +266,19 @@ footer {
       .disclaimer-mobile {
         display: none;
         @include phone {
+          display: block;
+          p {
+            font-family: $title-font;
+            font-size: 16.5px;
+            line-height: 1.4;
+            padding-left: 79px;
+            padding-right: 79px;
+            padding-bottom: 22px;
+            letter-spacing: 0.5px;
+            text-align: center;
+          }
+        }
+        @include tablet {
           display: block;
           p {
             font-family: $title-font;

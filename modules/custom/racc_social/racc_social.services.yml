@@ -1,0 +1,9 @@
+services:
+  racc_social.facebook.call:
+    class: Drupal\racc_social\Logic\FacebookLogic
+
+  racc_social.instagram.call:
+    class: Drupal\racc_social\Logic\InstagramLogic
+
+  racc_social.twitter.call:
+    class: Drupal\racc_social\Logic\TwitterLogic

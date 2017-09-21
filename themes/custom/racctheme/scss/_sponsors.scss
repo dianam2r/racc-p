@@ -16,6 +16,11 @@
     @include flexbox;
     @include flex-flow(column);
   }
+  @include tablet {
+    height: 652px;
+    @include flexbox;
+    @include flex-flow(column);
+  }
   .views-view-grid {
     width: 100vw;
   }
@@ -26,6 +31,10 @@
       @include flexbox;
       @include flex-flow(column);
     }
+    @include tablet {
+      @include flexbox;
+      @include flex-flow(column);
+    }
   }
   .brand-col {
     width: susy-span(4);
@@ -33,10 +42,20 @@
       width: 100%;
       margin-top: 31px;
     }
+    @include tablet {
+      width: 100%;
+      margin-top: 31px;
+    }
     .brand-logo {
       padding: 0px 221px;
       @include phone {
         padding: 0px 149px;
+      }
+      @include tablet {
+        padding: 0px 45vw;
+      }
+      @include wide {
+        padding: 0px 127px;
       }
     }
     .brand-name {
@@ -49,6 +68,12 @@
         padding: 0px 172px;
         @include phone {
           padding: 30px 133px;
+        }
+        @include tablet {
+          padding: 30px 43vw;
+        }
+        @include wide {
+          padding: 0px 116px;
         }
       }
     }

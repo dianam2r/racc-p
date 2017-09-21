@@ -16,6 +16,9 @@
   @include phone {
     width: 0%;
   }
+  @include tablet {
+    width: 0%;
+  }
 }
 .need-more-info {
    height: 258px;
@@ -74,6 +77,9 @@
       border-radius: 0px;
       width: 80vw;
     }
+    @include tablet {
+      width: 20vw;
+    }
   }
   input[type=submit],
   .button {
@@ -95,6 +101,9 @@
       border-radius: 0px;
       width: 25vw;
     }
+    @include tablet {
+      width: 17vw;
+    }
     &:hover {
       background-color: $color-white-transparent;
     }
@@ -108,6 +117,14 @@
   @include phone {
     margin-top: -85px;
     margin-left: 35%;
+  }
+  @include tablet {
+    margin-top: -75px;
+    margin-left: 0%;
+  }
+  @include wide {
+    margin-top: -75px;
+    margin-left: 50%;
   }
   p {
     color: $color-white;

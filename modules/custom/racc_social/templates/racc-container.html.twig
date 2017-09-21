@@ -1,0 +1,109 @@
+<div class="get-connected-content">
+    <div class="first-col">
+        <div class="connected">
+          {% if title %}
+          <h1>{{ title }}</h1>
+          {% else %}
+          <h1>Get Connected</h1>
+          {% endif %}
+          <div class="social">
+            <div class="social-row1">
+              <div class="social-media-facebook"><a href="https://www.facebook.com/ReadingAreaCommunityCollege"></a></div>
+              <div class="social-media-twitter"><a href="https://twitter.com/raccp_p"></a></div>
+              <div class="social-media-youtube"><a href="https://www.youtube.com/user/RACCvideopage"></a></div>
+            </div>
+            <div class="social-row2">
+              <div class="social-media-linkedin"><a href="https://www.linkedin.com/company/reading-area-community-college"></a></div>
+              <div class="social-media-snapchat"><a href="https://www.snapchat.com/add/racc_edu"></a></div>
+              <div class="social-media-instagram"><a href="https://www.instagram.com/RACC_edu/"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="stairs">
+          <div class="social-img-background"><img alt="instagramPicture" src="{{ results.instagramResponse.0.original }}" /></div>
+          <div class="social-instagram">
+            <p><span class="logo-social-instagram">@{{ results.twitterResponse.0.user.screen_name }}</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="second-col">
+        <div class="back-to-school">
+          <div class="social-img-background"><img alt="Facebook Post" src="{{ results.facebookResponse.0.full_picture }}" /></div>
+          <div class="social-facebook">
+            <p><span class="media-message">{{ results.facebookResponse.0.message }}<br></span><span class="logo-social-instagram">@{{ results.twitterResponse.0.user.screen_name }}</span></p>
+          </div>
+        </div>
+        <div class="stairs">
+          <div class="social-img-background"><img alt="instagramPicture" src="{{ results.instagramResponse.1.original }}" /></div>
+          <div class="social-instagram">
+            <p><span class="logo-social-instagram">@{{ results.twitterResponse.0.user.screen_name }}</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="third-col">
+        <div class="racc-entrance">
+          <div class="social-img-background"><img alt="Instagram Picture" src="{{ results.instagramResponse.2.original }}" /></div>
+          <div class="social-instagram">
+            <p><span class="logo-social-instagram">@{{ results.twitterResponse.0.user.screen_name }}</span></p>
+          </div>
+        </div>
+        <div class="advice">
+          <div class="message">
+            <p>
+              {{ results.twitterResponse.0.text }}
+              {% if results.twitterResponse.0.entities.user_mentions %}
+                {% for user in results.twitterResponse.0.entities.user_mentions %}
+                  <span> @{{ user.screen_name }}</span>
+                {% endfor %}
+              {% endif %}
+              {% if results.twitterResponse.0.entities.hashtags %}
+                {% for hashtag in results.twitterResponse.0.entities.hashtags %}
+                <span> #{{ hashtag.text }}</span>
+                {% endfor %}
+              {% endif %}
+              {% if results.twitterResponse.0.entities.media %}
+                {% for link in results.twitterResponse.0.entities.media %}
+                <span><a href="{{ link.url }}" target="_blank"> {{ link.url }}</a></span>
+                {% endfor %}
+              {% endif %}
+            </p>
+          </div>
+          <div class="social-twitter">
+            <p><span><strong>@{{ results.twitterResponse.0.user.screen_name }}</strong></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="fourth-col">
+        <div class="advice">
+          <div class="message">
+            <p>
+              {{ results.twitterResponse.1.text }}
+              {% if results.twitterResponse.1.entities.user_mentions %}
+                {% for user in results.twitterResponse.1.entities.user_mentions %}
+                  <span> @{{ user.screen_name }}</span>
+                {% endfor %}
+              {% endif %}
+              {% if results.twitterResponse.1.entities.hashtags %}
+                {% for hashtag in results.twitterResponse.1.entities.hashtags %}
+                <span> #{{ hashtag.text }}</span>
+                {% endfor %}
+              {% endif %}
+              {% if results.twitterResponse.1.entities.media %}
+                {% for link in results.twitterResponse.1.entities.media %}
+                <span><a href="{{ link.url }}" target="_blank"> {{ link.url }}</a></span>
+                {% endfor %}
+              {% endif %}
+            </p>
+          </div>
+          <div class="social-twitter">
+            <p><span class="logo-social-twitter"><strong>@{{ results.twitterResponse.1.user.screen_name }}</strong></span></p>
+          </div>
+        </div>
+        <div class="racc-product">
+          <div class="social-img-background"><img alt="Facebook Picture" src="{{ results.facebookResponse.1.full_picture }}" /></div>
+          <div class="social-facebook">
+            <p><span class="media-message">{{ results.facebookResponse.0.message }}<br></span><span class="logo-social-instagram">@{{ results.twitterResponse.0.user.screen_name }}</span></p>
+          </div>
+        </div>
+      </div>
+</div>

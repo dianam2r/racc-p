@@ -10,6 +10,9 @@
   @include phone {
     margin-left: 30%;
   }
+  @include tablet {
+    margin-left: 10%;
+  }
   .links {
     @include inline-flex;
     li {

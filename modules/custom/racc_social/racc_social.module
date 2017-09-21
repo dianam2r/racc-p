@@ -26,10 +26,18 @@ function racc_social_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_theme().
  */
-function racc_social_theme() {
+function racc_social_theme($existing, $type, $theme, $path) {
   return [
     'racc_social' => [
-      'render element' => 'children',
+      'variables' => [
+        'id' => NULL,
+      ],
+    ],
+    'racc_container' => [
+      'variables' => [
+        'results' => NULL,
+        'title' => NULL,
+      ],
     ],
   ];
 }

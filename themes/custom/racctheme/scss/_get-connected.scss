@@ -43,7 +43,8 @@
      background-color: #F0F0F2;
      height: 397px;
      .message, .social-twitter {
-       span {
+       span,
+       a {
          color: $color-red;
        }
      }
@@ -60,7 +61,7 @@
      }
      .social-twitter {
        p {
-         padding-top: 97px;
+         padding-top: 110px;
          padding-left: 17px;
          font-size: 14px;
          @include phone {
@@ -86,6 +87,16 @@
   font-size: 18px;
   width: 200px;
 }
+
+.center-loading {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+  }
+}
 /* ---- END GENERAL ASSETS ---- */
 
 .get-connected {
@@ -102,6 +113,14 @@
       @include flexbox;
       @include flex-flow(column);
     }
+    @include tablet {
+      @include flexbox;
+      @include flex-flow(column);
+    }
+    @include wide {
+      @include flexbox;
+      @include flex-flow(column);
+    }
 }
 
 .first-col,
@@ -110,6 +129,14 @@
 .fourth-col {
   width: susy-span(3);
   @include phone {
+    width: 100%;
+  }
+  @include tablet {
+    @include inline-flex;
+    width: 100%;
+  }
+  @include wide {
+    @include inline-flex;
     width: 100%;
   }
 }
@@ -144,12 +171,28 @@
         padding-left: 41px;
       }
     }
+    .connected {
+      @include tablet {
+        width: 50%;
+      }
+      @include wide {
+        width: 50%;
+      }
+    }
     .stairs {
       height: 397px;
       position: relative;
       overflow-y: hidden;
       @include phone {
         height: 374px;
+      }
+      @include tablet {
+        height: 400px;
+        width: 50%;
+      }
+      @include wide {
+        height: 400px;
+        width: 50%;
       }
     .social-instagram {
       position: relative;
@@ -267,6 +310,12 @@
     @include phone {
       height: 376px;
     }
+    @include tablet {
+      width: 50%;
+    }
+    @include wide {
+      width: 50%;
+    }
     .social-facebook {
       position: relative;
       background-color: transparent;
@@ -300,6 +349,14 @@
     overflow-y: hidden;
     @include phone {
       height: 374px;
+    }
+    @include tablet {
+      height: 400px;
+      width: 50%;
+    }
+    @include wide {
+      height: 400px;
+      width: 50%;
     }
   .social-instagram {
     position: relative;
@@ -338,6 +395,14 @@
     @include phone {
       height: 374px;
     }
+    @include tablet {
+      height: 400px;
+      width: 50%;
+    }
+    @include wide {
+      height: 400px;
+      width: 50%;
+    }
     .message p {
       padding-top: 138px;
       @include phone {
@@ -345,7 +410,7 @@
       }
     }
     .social-twitter p{
-      padding-top: 108px;
+      padding-top: 125px;
       @include phone {
         padding-top: 114px;
       }
@@ -357,6 +422,12 @@
       overflow-y: hidden;
       @include phone {
         height: 375px;
+      }
+      @include tablet {
+        width: 50%;
+      }
+      @include wide {
+        width: 50%;
       }
       .social-instagram {
         position: relative;
@@ -386,6 +457,14 @@
       overflow-y: hidden;
       @include phone {
         height: 374px;
+      }
+      @include tablet {
+        width: 50%;
+        height: 400px;
+      }
+      @include wide {
+        width: 50%;
+        height: 400px;
       }
       .social-facebook {
         position: relative;
@@ -420,6 +499,12 @@
       }
       @include phone {
         height: 375px;
+      }
+      @include tablet {
+        width: 50%;
+      }
+      @include wide {
+        width: 50%;
       }
       @include social-twitter-bar;
     }
