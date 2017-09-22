@@ -6,7 +6,7 @@
 jQuery(document).ready(function ($) {
   /* This is to upload the contents of the get-connected block */
   $.ajax({
-    url: 'http://dev-racc-p.pantheonsite.io/racc_social_posts',
+    url: '/racc_social_posts',
     type: 'GET',
     success: function (data) {
       $('.center-loading').hide();
