@@ -217,6 +217,10 @@
           }
         }
       }
+      &:hover{
+        background-color: transparentize($color-gray-one, 0.3);
+        height: 100%;
+      }
     }
   }
 }
@@ -383,6 +387,10 @@
         }
       }
     }
+    &:hover{
+      background-color: transparentize($color-gray-one, 0.3);
+      height: 100%;
+    }
   }
 }
 .advice {
@@ -454,6 +462,10 @@
               padding-right: 80px;
             }
           }
+        }
+        &:hover{
+          background-color: transparentize($color-gray-one, 0.3);
+          height: 100%;
         }
       }
     }
